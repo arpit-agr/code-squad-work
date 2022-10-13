@@ -1,6 +1,7 @@
 const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
 const htmlmin = require("html-minifier");
 const CleanCSS = require("clean-css");
+const esbuild = require("esbuild");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setQuietMode(true);
@@ -41,6 +42,19 @@ module.exports = function(eleventyConfig) {
     }
 
     return content;
+  });
+
+  //ELEVENTY AFTER EVENT
+	eleventyConfig.on('eleventy.after', async () => {
+    // Run me after the build ends
+		return esbuild.build({
+      entryPoints: [
+				'src/build-scripts/lite-yt-embed.js'
+			],
+      bundle: true,
+			minify: true,
+      outdir: 'public/scripts'
+    });
   });
 
   return {
