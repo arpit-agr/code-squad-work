@@ -15,8 +15,8 @@ module.exports = function(eleventyConfig) {
 	// eleventyConfig.addPassthroughCopy("./src/manifest.webmanifest");
 
   //Watch target
-	// eleventyConfig.addWatchTarget("./src/_includes/css/");
-	// eleventyConfig.addWatchTarget('./src/scripts/');
+	eleventyConfig.addWatchTarget("./src/_includes/css/");
+	eleventyConfig.addWatchTarget('./src/scripts/');
 
   //Filter
   eleventyConfig.addFilter("cssmin", function(code) {
