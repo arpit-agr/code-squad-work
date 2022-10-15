@@ -1,0 +1,24 @@
+header {
+	--cluster-horizontal-alignment: space-between;
+	position: fixed;
+	width: 100%;
+	padding-top: var(--header-padding-block);
+	padding-bottom: var(--header-padding-block);
+	background-color: var(--green-bg);
+	z-index: 1;
+	transition: all 400ms ease;
+	/* background-repeat: repeat;
+	background-image: var(--grid-pattern);
+	background-size: var(--pattern-size); */
+}
+
+html:not([data-scroll="0"]) header {
+	background-image: unset;
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+	display: inline-block;
+	width: var(--logo-width);
+	height: auto;
+}
