@@ -1,6 +1,134 @@
 ---
-title: Code Squad
+title: "A platform for schools to teach computer science to grades 1-10"
+subtitle: "Simplify coding and make it fun & effective for your classrooms!!"
 layout: "layouts/home.html"
+about:
+  heading: "Who are we"
+  content:
+    - "CodeSquad is an online learning platform designed to help schools implement a coding program for grades 1-10. Our platform includes curriculum, tools, and resources required to run a successful coding program, without any external teachers."
+    - "We are an edtech company with proven experience in teaching coding across geographies. We are on a mission to inspire the next generation to be coders and not fashionistas."
+    - "Simplify coding & make it fun & effective for your classrooms!!"
+why:
+  heading: "Why choose us?"
+  content:
+    - 'Curriculum friendly to meet the <abbr title="The Office for Standards in Education, Children''s Services and Skills">OFSTED</abbr> requirements'
+    - "Taught more than 10,000 kids across 5 countries incl. kids from elite schools in Mumbai"
+    - "Simple online web portal (CSCM) equips schools to teach and manage students"
+    - "Integrates math, science, literature, history and geography reinforcing student learning"
+    - "Student assessment tools available on the CSCM platform"
+    - "Low-cost alternative to extra staff or on-going training"
+    - "Regularly updated, always relevant"
+    - "Expert support whenever you need"
+what:
+  heading: "Platform features"
+  content:
+    # - "CodeSquad Code Management platform"
+    - "All-in-one platform runs on any browser, any device"
+    - "Unlimited learners and courses"
+    - "Unlimited interactive learning content and assessment authoring"
+    - "Collaborative IDE supports 10+ languages"
+    - "Powerful auto-grading and automated feedback in real time"
+    - "Create manage sections of learners in your courses"
+    - "Assign to sections or all learners"
+    - "Individual logins available for school admin, teacher, and students"
+    - "Set due dates for assignments"
+    - "View learner work in real-time"
+    - "Real-time learner engagement and progress tracking"
+    - "Create courses from scratch"
+    - "Create courses from templates"
+    - "Use and customize resources from the content marketplace"
+    - "Publish a course, lesson, or assignment to the content marketplace"
+    - "Duplicate a lesson or assignment"
+    - "Multiple choice questions, short answer questions, Parson’s questions"
+programs:
+  heading: "Programs"
+  grades:
+    [
+      {
+        heading: "Grade 1 - Grade 2",
+        content:
+          [
+            "Intro to coding using Scratch Jr",
+            "Construction activities using paper art",
+            "covering, shapes, seasons and nature",
+          ],
+      },
+      {
+        heading: "Grade 3 - Grade 5",
+        content:
+          [
+            "Game programming using Scratch",
+            "Design thinking & Engineering",
+            "Intro to AI & ML",
+          ],
+      },
+      {
+        heading: "Grade 6 - Grade 8",
+        content:
+          [
+            "Dive into Generative Art using Kojo",
+            "Mobile App development",
+            "Intro to HTML, CSS, Javascript",
+          ],
+      },
+      {
+        heading: "Grade 9 - Grade 10",
+        content:
+          [
+            "Python Programming",
+            "Javascript Programming",
+            "Cybersecurity",
+            "Intro to Cryptocurrency & NFT's",
+          ],
+      },
+    ]
+how:
+  heading: "How Does it work?"
+  content:
+    [
+      {
+        heading: "School Teacher Trains the Student",
+        content:
+          [
+            "CodeSquad trains YOUR teachers",
+            "Detailed lesson plans and presentations provided",
+            "Students login for concept notes, worksheets and assessments",
+            "Grading facility provided through the CSCM platform and assessments",
+          ],
+      },
+      {
+        heading: "CodeSquad teaches students",
+        content:
+          [
+            "CodeSquad’s teachers will teach the students online",
+            "No teaching resources required",
+            "Students login for concept notes, worksheets and assessments",
+            "CodeSquad’s teachers will assess the students",
+          ],
+      },
+    ]
+videos: [
+    { id: "QGOB3R8kyF8", title: "Math make 10" },
+    { id: "nbEJEV2SXf4", title: "Interactive map 2" },
+    { id: "5Ai1VrJ1Qjs", title: "HTML Hangman" },
+    { id: "BaSTWUkLGog", title: "Mask NoMask" },
+    # { id: "0JbUkIwkpEQ", title: "Python Webmap" },
+  ]
+testimonial:
+  heading: "Testimonial"
+  content:
+    [
+      "We have been associated with CodeSquad for the last eight months during this pandemic. The entire student, parent and teaching faculty at Leh Valley School feel that this was the best decision that we could have taken.",
+      "We started the coding classes at the time of the second lockdown and introducing a new, interesting subject like coding helped keep all the children engaged and excited. Children would wait eagerly for their coding classes and rarely missed any.",
+      "It was a pleasure being associated with CodeSquad. Thank you from the mountains of Ladakh!",
+    ]
+  person: "TKTK Tundup"
+  designation: "Principal"
+  organisation: "Leh Valley School"
+  image: "leh-valley-school.png"
+  imageAlt: "Logo of Leh Valley School"
+contact:
+  heading: "Contact Us"
+  mobile: 9920670128
+  mail: "codesquadedu@gmail.com"
 ---
-
-# {{ title }}
