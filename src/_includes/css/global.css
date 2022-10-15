@@ -38,3 +38,18 @@
 * {
 	font-variation-settings: var(--wght);
 }
+
+
+.btn {
+	--wght: "wght" 600;
+	--btn-color: var(--bg);
+	position: relative;
+	/* display: inline-block; */
+	padding: var(--btn-padding-block) var(--btn-padding-inline);
+	background-color: var(--btn-bg, var(--green));
+	border-radius: var(--border-radius);
+	color: var(--btn-color);
+	font-size: var(--step-0);
+	line-height: 1;
+	text-decoration: none;
+}
