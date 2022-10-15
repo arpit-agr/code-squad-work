@@ -6,6 +6,27 @@
 	--letter-spacing--1: -0.015em;
 }
 
+:root {
+	--bg-lightness: 95%;
+
+	--white: hsl(181deg 0% 100%);
+	--black: hsl(181deg 3% 12%);
+
+	--blue: hsl(210deg 100% 50%);
+	--green: hsl(170deg 89% 27%);
+	--orange: hsl(21deg 100% 48%);
+	--purple: hsl(237deg 53% 50%);
+	--pink: hsl(353deg 91% 60%);
+	--red: hsl(10deg 100% 55%);
+
+	--blue-bg: hsl(210deg 88% var(--bg-lightness));
+	--green-bg: hsl(170deg 88% var(--bg-lightness));
+	--orange-bg: hsl(21deg 88% var(--bg-lightness));
+	--purple-bg: hsl(237deg 88% var(--bg-lightness));
+	--pink-bg: hsl(353deg 88% var(--bg-lightness));
+	--red-bg: hsl(10deg 88% var(--bg-lightness));
+}
+
 
 * {
 	font-variation-settings: var(--wght);
