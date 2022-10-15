@@ -1,0 +1,12 @@
+
+:root {
+	--wght: "wght" 450;
+	--font-plain: "Figtree", "Manrope", "Nunito", sans-serif;
+	--font-special: "Figtree", "Manrope", "Nunito", sans-serif;
+	--letter-spacing--1: -0.015em;
+}
+
+
+* {
+	font-variation-settings: var(--wght);
+}
