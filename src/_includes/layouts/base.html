@@ -13,11 +13,12 @@
   <!-- meta information -->
   {%- include "partials/meta.html" -%}
 </head>
-<body>
+<body class="flow">
   <a href="#main" class="skip-to-main">Skip to content</a>
   <header class="site-head">
     {% include "partials/header.html" %}
   </header>
+  <main class="stack" id="main" tabindex="-1">
     {%- block content -%}
       This page is under maintenance.
     {%- endblock -%}
