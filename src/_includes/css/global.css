@@ -1,9 +1,25 @@
+:root {
+	--max-width: 84rem;
+	--gutter: var(--space-xs-s);
+	--section-gap: var(--space-xl-2xl);
+	--header-padding-block: var(--space-2xs);
+	--logo-width: var(--step-7);
+	--btn-padding-block: calc(0.5 * var(--step--1));
+	--btn-padding-inline: calc(1 * var(--step--1));
+	--card-padding: var(--space-s);
+	--card-border-width: 1px;
+	--article-border-width: var(--space-3xs-2xs);
+	--border-radius: var(--step--2);
+	--card-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05);
+	--video-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
 
 :root {
 	--wght: "wght" 450;
 	--font-plain: "Figtree", "Manrope", "Nunito", sans-serif;
 	--font-special: "Figtree", "Manrope", "Nunito", sans-serif;
 	--letter-spacing--1: -0.015em;
+	--letter-spacing-1: 0.015em;
 }
 
 :root {
@@ -34,22 +50,122 @@
 	--card-bg: var(--green-bg);
 }
 
-
 * {
 	font-variation-settings: var(--wght);
 }
 
+body {
+	--flow-space: var(--section-gap);
+	background-color: var(--bg);
+	font-family: var(--font-plain);
+	font-size: var(--step-0);
+	color: var(--text);
+
+	background-repeat: repeat;
+	background-image: var(--grid-pattern);
+	background-position: center;
+	background-size: var(--pattern-size);
+}
+
+main {
+	/* --flow-space: calc(
+		var(--section-gap) - (2 * var(--header-padding-block)) -
+			(var(--logo-width) / 4.5914669784)
+	); */
+
+	/* dividing by 4.5914669784 gives me the logo height */
+	--flow-space: calc(var(--section-gap) - (var(--logo-width) / 4.5914669784));
+	--stack-gap: var(--section-gap);
+	margin-bottom: var(--section-gap);
+}
+
+:where(main *) {
+	--flow-space: 1em;
+}
+
+h1,
+h2,
+h3 {
+	--wght: "wght" 600;
+	font-family: var(--font-special);
+	line-height: 1.2;
+	letter-spacing: var(--letter-spacing--1);
+}
+
+h1 {
+	font-size: var(--step-3);
+}
+
+h2 {
+	font-size: var(--step-2);
+}
+
+h3 {
+	font-size: var(--step-1);
+}
+
+h1 {
+	max-width: 28ch;
+}
+
+p {
+	max-width: 44ch;
+}
+
+strong {
+	--wght: "wght" 600;
+}
+
+a {
+	--wght: "wght" 500;
+	color: inherit;
+	text-underline-offset: 0.15em;
+}
+
+a[href*="tel"] {
+	font-feature-settings: "tnum";
+}
 
 .btn {
 	--wght: "wght" 600;
 	--btn-color: var(--bg);
+	--btn-bg: var(--green);
+	--btn-border-color: transparent;
 	position: relative;
 	/* display: inline-block; */
 	padding: var(--btn-padding-block) var(--btn-padding-inline);
-	background-color: var(--btn-bg, var(--green));
+	background-color: var(--btn-bg);
+	border: var(--card-border-width) solid var(--btn-border-color);
 	border-radius: var(--border-radius);
 	color: var(--btn-color);
 	font-size: var(--step-0);
 	line-height: 1;
 	text-decoration: none;
+	/* box-shadow: var(--card-shadow); */
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.btn[data-variant="secondary"] {
+	--btn-color: var(--text);
+	--btn-bg: var(--bg);
+	text-shadow: unset;
+}
+
+.btn[data-variant="outline"] {
+	--btn-color: var(--heading-color);
+	--btn-bg: none;
+	--btn-border-color: var(--heading-color);
+	text-shadow: unset;
+}
+
+.btn:where(:hover, :focus) {
+	box-shadow: unset;
+}
+
+abbr {
+	text-underline-offset: 0.33em;
+}
+
+dt::after {
+	content: ": ";
 }
