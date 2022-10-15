@@ -27,6 +27,13 @@
 	--red-bg: hsl(10deg 88% var(--bg-lightness));
 }
 
+:root {
+	--text: var(--black);
+	--bg: var(--white);
+	--heading-color: var(--green);
+	--card-bg: var(--green-bg);
+}
+
 
 * {
 	font-variation-settings: var(--wght);
