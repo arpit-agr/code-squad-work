@@ -1,0 +1,33 @@
+.wrapper {
+	--max-width: min(80rem, 100vw);
+	max-width: var(--max-width);
+	min-width: min(80em, 100%);
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+}
+
+.flow > * + * {
+	margin-top: var(--flow-space, 1em);
+}
+
+:where(.cluster) {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--cluster-gap, 1em);
+	justify-content: var(--cluster-horizontal-alignment, flex-start);
+	align-items: var(--cluster-vertical-alignment, center);
+}
+
+:where(.stack) {
+	display: flex;
+	flex-direction: column;
+	gap: var(--stack-gap, 1em);
+	justify-content: var(--stack-vertical-alignment, flex-start);
+	align-items: var(--stack-horizontal-alignment, flex-start);
+}
+
+.step--1 {
+	font-size: var(--step--1);
+}
