@@ -1,5 +1,5 @@
 ---
-title: "A platform for schools to teach computer science to grades 1-10"
+title: "Online platform for schools to teach computer science to grades 1-10"
 subtitle: "Simplify coding and make it fun & effective for your classrooms!!"
 layout: "layouts/home.html"
 about:
@@ -120,7 +120,7 @@ testimonial:
     [
       "We have been associated with CodeSquad for the last eight months during this pandemic. The entire student, parent and teaching faculty at Leh Valley School feel that this was the best decision that we could have taken.",
       "We started the coding classes at the time of the second lockdown and introducing a new, interesting subject like coding helped keep all the children engaged and excited. Children would wait eagerly for their coding classes and rarely missed any.",
-      "It was a pleasure being associated with CodeSquad. Thank you from the mountains of Ladakh!",
+      "It was a pleasure being associated with Code Squad. Thank you from the mountains of Ladakh!",
     ]
   person: "TKTK Tundup"
   designation: "Principal"
