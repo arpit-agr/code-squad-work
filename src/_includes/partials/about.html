@@ -1,0 +1,20 @@
+{% set url = "./src/images/" + about.imageUrl %}
+{% set alt = about.imageAlt %}
+{% set sizes = about.imageSizes %}
+{% set loading = about.imageLoading %}
+{% set class = about.imageClass %}
+{% set priority = about.imagePriority %}
+
+<article class="about flow wrapper">
+  <div class="article-heading">
+    <h2>{{ about.heading }}</h2>
+  </div>
+  <div class="cluster">
+    <div class="card shadow flow">
+      {% for content in about.content %}
+      <p>{{ content }}</p>
+      {% endfor %}
+    </div>
+    {% image url, alt, sizes, loading, class, priority %}
+  </div>
+</article>
