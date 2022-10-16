@@ -1,0 +1,10 @@
+<article class="why flow wrapper">
+  <div class="article-heading">
+    <h2>{{ why.heading }}</h2>
+  </div>
+  <ul class="why-list" role="list">
+    {% for content in why.content %}
+      <li class="card shadow stack"><p>{{ content | safe }}</p></li>
+    {% endfor %}
+  </ul>
+</article>
