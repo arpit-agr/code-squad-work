@@ -1,0 +1,26 @@
+{% set url = "./src/images/" + testimonial.imageUrl %}
+{% set alt = testimonial.imageAlt %}
+{% set sizes = testimonial.imageSizes %}
+{% set loading = testimonial.imageLoading %}
+{% set class = testimonial.imageClass %}
+{% set priority = testimonial.imagePriority %}
+
+<article class="testimonial stack wrapper">
+  <div class="article-heading">
+    <h2>{{ testimonial.heading }}</h2>
+  </div>
+  <figure class="card shadow stack">
+    <blockquote class="flow">
+      {% for content in testimonial.content %}
+        <p>{{ content }}</p>
+      {% endfor %}
+    </blockquote>
+    <figcaption class="cluster">
+      {% image url, alt, sizes, loading, class, priority %}
+      <div>
+        <p class="name">{{ testimonial.person }}</p>
+        <p>{{ testimonial.designation }}, {{ testimonial.organisation }}</p>
+      </div>
+    </figcaption>
+  </figure>
+</article>
