@@ -1,0 +1,15 @@
+<article class="programs flow wrapper">
+  <div class="article-heading">
+    <h2>{{ programs.heading }}</h2>
+  </div>
+  <dl class="programs-list">
+    {% for item in programs.grades %}
+      <div class="card shadow flow">
+        <dt>{{ item.heading }}</dt>
+        {% for content in item.content %}
+          <dd class="cluster">{{ content }}</dd>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </dl>
+</article>
