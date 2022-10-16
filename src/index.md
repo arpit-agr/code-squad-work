@@ -1,13 +1,22 @@
 ---
 title: "Online platform for schools to teach computer science to grades 1-10"
 subtitle: "Simplify coding and make it fun & effective for your classrooms!!"
+codeWfloppy:
+  content: "For parents looking for private tutors TKTK"
+  url: "https://codewfloppy.com/"
 layout: "layouts/home.html"
 about:
   heading: "Who are we"
   content:
-    - "CodeSquad is an online learning platform designed to help schools implement a coding program for grades 1-10. Our platform includes curriculum, tools, and resources required to run a successful coding program, without any external teachers."
+    - "Code Squad is an online learning platform designed to help schools implement a coding program for grades 1-10. Our platform includes curriculum, tools, and resources required to run a successful coding program, without any external teachers."
     - "We are an edtech company with proven experience in teaching coding across geographies. We are on a mission to inspire the next generation to be coders and not fashionistas."
     - "Simplify coding & make it fun & effective for your classrooms!!"
+  imageUrl: "kids.jpg"
+  imageAlt: "Kids studying coding on a laptop in a classroom"
+  imageSizes: "(max-width: 74.25em) 100vw, 50vw"
+  imageLoading: "lazy"
+  imageClass: "img-kids"
+  imagePriority: ""
 why:
   heading: "Why choose us?"
   content:
@@ -18,19 +27,20 @@ why:
     - "Student assessment tools available on the CSCM platform"
     - "Low-cost alternative to extra staff or on-going training"
     - "Regularly updated, always relevant"
-    - "Expert support whenever you need"
-what:
-  heading: "Platform features"
+    - "Expert support, whenever you need"
+features:
+  heading: "CSCM features"
+  desc: "CSCM = Code Squad Code Management platform"
   content:
     # - "CodeSquad Code Management platform"
     - "All-in-one platform runs on any browser, any device"
     - "Unlimited learners and courses"
     - "Unlimited interactive learning content and assessment authoring"
-    - "Collaborative IDE supports 10+ languages"
+    - "Collaborative <abbr title='Integrated development environment'>IDE</abbr> supports 10+ languages"
     - "Powerful auto-grading and automated feedback in real time"
     - "Create manage sections of learners in your courses"
     - "Assign to sections or all learners"
-    - "Individual logins available for school admin, teacher, and students"
+    - "Individual logins available for school admin, teacher and students"
     - "Set due dates for assignments"
     - "View learner work in real-time"
     - "Real-time learner engagement and progress tracking"
@@ -39,7 +49,7 @@ what:
     - "Use and customize resources from the content marketplace"
     - "Publish a course, lesson, or assignment to the content marketplace"
     - "Duplicate a lesson or assignment"
-    - "Multiple choice questions, short answer questions, Parson’s questions"
+    - "<abbr title='Multiple Choice Questions'>MCQs</abbr>, short answer questions, Parson’s questions"
 programs:
   heading: "Programs"
   grades:
@@ -48,7 +58,7 @@ programs:
         heading: "Grade 1 - Grade 2",
         content:
           [
-            "Intro to coding using Scratch Jr",
+            "Introduction to coding using Scratch Jr",
             "Construction activities using paper art",
             "covering, shapes, seasons and nature",
           ],
@@ -59,7 +69,7 @@ programs:
           [
             "Game programming using Scratch",
             "Design thinking & Engineering",
-            "Intro to AI & ML",
+            "Introduction to AI & <abbr title='Machine learning'>ML</abbr>",
           ],
       },
       {
@@ -68,7 +78,7 @@ programs:
           [
             "Dive into Generative Art using Kojo",
             "Mobile App development",
-            "Intro to HTML, CSS, Javascript",
+            "Introduction to HTML, CSS, Javascript",
           ],
       },
       {
@@ -78,7 +88,7 @@ programs:
             "Python Programming",
             "Javascript Programming",
             "Cybersecurity",
-            "Intro to Cryptocurrency & NFT's",
+            "Introduction to Cryptocurrency & <abbr title='Non-fungible tokens'>NFTs</abbr>",
           ],
       },
     ]
@@ -125,8 +135,12 @@ testimonial:
   person: "TKTK Tundup"
   designation: "Principal"
   organisation: "Leh Valley School"
-  image: "leh-valley-school.png"
+  imageUrl: "leh-valley-school.png"
   imageAlt: "Logo of Leh Valley School"
+  imageSizes: "120px"
+  imageLoading: "lazy"
+  imageClass: ""
+  imagePriority: ""
 contact:
   heading: "Contact Us"
   mobile: 9920670128

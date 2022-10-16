@@ -7,7 +7,7 @@
       <div class="card shadow flow">
         <dt>{{ item.heading }}</dt>
         {% for content in item.content %}
-          <dd class="cluster">{{ content }}</dd>
+          <dd class="cluster"><p>{{ content | safe }}</p></dd>
         {% endfor %}
       </div>
     {% endfor %}
