@@ -1,28 +1,43 @@
 :focus {
-  outline-style: solid;
+	outline-style: solid;
 }
 
 :focus:not(:focus-visible) {
-  outline: none;
+	outline: none;
 }
 
 [tabindex="-1"]:focus {
-  outline: none;
+	outline: none;
 }
 
 .skip-to-main {
-  display: block;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  transform: translateY(-100%);
-  transition: transform 0.15s ease;
-  z-index: 999;
+	display: block;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	transform: translateY(-100%);
+	transition: transform 0.15s ease;
+	z-index: 999;
+}
+
+.skip-to-main {
+	--wght: "wght" 600;
+	--btn-color: var(--bg);
+	--btn-bg: var(--heading-color);
+	padding: var(--btn-padding-block) var(--btn-padding-inline);
+	background-color: var(--btn-bg);
+	border: var(--btn-border-width) solid var(--btn-border-color);
+	border-radius: var(--btn-border-radius);
+	color: var(--btn-color);
+	font-size: var(--step-0);
+	line-height: 1;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .skip-to-main:focus {
-  opacity: 1;
-  outline: 0;
-  transform: translate(0);
+	opacity: 1;
+	outline: 0;
+	transform: translate(0);
 }
