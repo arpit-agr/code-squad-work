@@ -1,0 +1,15 @@
+#programs {
+	--heading-color: var(--purple);
+	--card-bg: var(--purple-bg);
+}
+
+.programs-list dt {
+	--wght: "wght" 600;
+	font-size: var(--step-1);
+}
+
+.programs-list dd::before {
+	content: "✦";
+	color: var(--heading-color);
+	font-size: var(--step--1);
+}
