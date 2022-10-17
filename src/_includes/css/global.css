@@ -165,6 +165,11 @@ abbr {
 	text-underline-offset: 0.33em;
 }
 
-dt::after {
-	content: ": ";
+dt {
+	--wght: "wght" 600;
+	font-size: var(--step-1);
 }
+
+/* dt::after {
+	content: ": ";
+} */

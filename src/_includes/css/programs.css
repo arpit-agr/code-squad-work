@@ -3,10 +3,10 @@
 	--card-bg: var(--purple-bg);
 }
 
-.programs-list dt {
+/* .programs-list dt {
 	--wght: "wght" 600;
 	font-size: var(--step-1);
-}
+} */
 
 /* .programs-list dd::before {
 	content: "✦";
