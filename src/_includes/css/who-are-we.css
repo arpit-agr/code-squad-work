@@ -1,0 +1,36 @@
+#who-are-we {
+	--heading-color: var(--orange);
+	--card-bg: var(--orange-bg);
+}
+
+#who-are-we > .cluster {
+	--cluster-vertical-alignment: stretch;
+}
+
+#who-are-we picture {
+	flex-grow: 999;
+}
+
+#who-are-we picture {
+	position: relative;
+}
+
+#who-are-we picture:before {
+	content: "";
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	top: 10%;
+	left: 5%;
+	background: hsl(0deg 0% 0% / 25%);
+	filter: blur(15px);
+}
+
+.img-kids {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: var(--border-radius);
+	rotate: -1deg;
+	max-height: 368px;
+}
