@@ -1,0 +1,48 @@
+.article-heading {
+	border-left: var(--article-border-width) solid currentColor;
+	padding-left: calc(var(--card-padding) - var(--article-border-width));
+	color: var(--heading-color);
+}
+
+.card {
+	padding: var(--card-padding);
+	background-color: var(--card-bg);
+	border: var(--card-border-width) solid var(--heading-color);
+	border-radius: var(--border-radius);
+}
+
+.card[data-variant="browser"] {
+	--circle-width: var(--space-xs);
+	--browser-bar-height: calc((2 * var(--card-padding)) + var(--circle-width));
+	position: relative;
+	padding-top: calc(var(--browser-bar-height) + var(--card-padding));
+}
+
+.card[data-variant="browser"]:before,
+.card[data-variant="browser"]:after {
+	content: "";
+	position: absolute;
+}
+
+.card[data-variant="browser"]:before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: var(--browser-bar-height);
+	/* TODO: make the bg color dynamic */
+	background: hsl(170deg 40% 79%);
+	border-bottom: var(--card-border-width) solid var(--heading-color);
+	border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.card[data-variant="browser"]:after {
+	top: var(--card-padding);
+	left: var(--card-padding);
+	width: var(--circle-width);
+	height: var(--circle-width);
+	background-color: hsl(3deg 99% 67%);
+	border-radius: 50%;
+	box-shadow: hsl(41deg 99% 59%) var(--card-padding) 0,
+		#2bc840 calc(2 * var(--card-padding)) 0;
+	filter: drop-shadow(1px 2px 0 var(--heading-color));
+}
