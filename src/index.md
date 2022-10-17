@@ -117,13 +117,15 @@ how:
           ],
       },
     ]
-videos: [
-    { id: "QGOB3R8kyF8", title: "Math make 10" },
-    { id: "nbEJEV2SXf4", title: "Interactive map 2" },
-    { id: "5Ai1VrJ1Qjs", title: "HTML Hangman" },
-    { id: "BaSTWUkLGog", title: "Mask NoMask" },
-    # { id: "0JbUkIwkpEQ", title: "Python Webmap" },
-  ]
+videos:
+  heading: "Videos"
+  content: [
+      { id: "QGOB3R8kyF8", title: "Math make 10" },
+      { id: "nbEJEV2SXf4", title: "Interactive map 2" },
+      { id: "5Ai1VrJ1Qjs", title: "HTML Hangman" },
+      { id: "BaSTWUkLGog", title: "Mask NoMask" },
+      # { id: "0JbUkIwkpEQ", title: "Python Webmap" },
+    ]
 testimonial:
   heading: "Testimonial"
   content:
