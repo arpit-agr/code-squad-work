@@ -1,0 +1,18 @@
+#why-choose-us {
+	--heading-color: var(--blue);
+	--card-bg: var(--blue-bg);
+}
+
+.why-list li {
+	--stack-gap: var(--space-m-l);
+	--stack-vertical-alignment: space-between;
+	counter-increment: eyebrow;
+}
+
+.why-list li::after {
+	content: counter(eyebrow, decimal-leading-zero);
+	width: 100%;
+	color: var(--heading-color);
+	/* padding-bottom: var(--space-m); */
+	/* border-bottom: var(--card-border-width) solid; */
+}
