@@ -1,0 +1,14 @@
+#cscm-features {
+	--heading-color: var(--pink);
+	--card-bg: var(--pink-bg);
+}
+
+.features-desc {
+	padding-left: var(--card-padding);
+}
+
+.features-list {
+	--columns: 1;
+	columns: var(--columns);
+	column-gap: calc(2 * var(--card-padding));
+}
