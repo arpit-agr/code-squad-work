@@ -1,0 +1,19 @@
+{% set heading = how.heading %}
+
+<article class="flow wrapper" id={{ heading | slugify }}>
+  <div class="article-heading">
+    <h2>{{ heading }}</h2>
+  </div>
+  <div class="how-list list">
+    {% for item in how.content %}
+      <div class="card shadow flow">
+        <h3>{{ item.heading }}</h3>
+        <ul class="flow" role="list">
+          {% for content in item.content %}
+            <li class="cluster"><p>{{ content | safe }}</p></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</article>

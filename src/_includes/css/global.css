@@ -99,9 +99,13 @@ h2,
 h3 {
 	--wght: "wght" 600;
 	font-family: var(--font-special);
+	text-transform: capitalize;
+}
+
+h1,
+h2 {
 	line-height: 1.15;
 	letter-spacing: var(--letter-spacing--1);
-	text-transform: capitalize;
 }
 
 h1 {

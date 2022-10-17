@@ -5,14 +5,15 @@
 	flex-wrap: nowrap;
 } */
 
-:where(.features-list, .programs-list) :where(li, dd) {
+:where(.features-list, .programs-list, .how-list) :where(li, dd) {
 	--cluster-gap: 0.5em;
 	--cluster-vertical-alignment: flex-start;
 	flex-wrap: nowrap;
 }
 
 .features-list li:before,
-.programs-list dd::before {
+.programs-list dd:before,
+.how-list li::before {
 	/* content: "●"; */
 	content: "✦";
 	color: var(--heading-color);
@@ -29,9 +30,13 @@
 
 @media (min-width: 34em) {
 	.why-list,
-	.features-list,
-	.programs-list,
 	.videos-list {
+		--columns: 2;
+	}
+}
+
+@media (min-width: 36em) {
+	.programs-list {
 		--columns: 2;
 	}
 }
@@ -40,12 +45,22 @@
 	.why-list {
 		--columns: 3;
 	}
+
+	.features-list,
+	.how-list {
+		--columns: 2;
+	}
 }
 
 @media (min-width: 68em) {
 	.why-list,
-	.programs-list,
 	.videos-list {
+		--columns: 4;
+	}
+}
+
+@media (min-width: 78em) {
+	.programs-list {
 		--columns: 4;
 	}
 }
