@@ -21,6 +21,12 @@
 	margin-top: 1ex;
 }
 
+@media (max-width: 24.6875em) {
+	#intro h1 {
+		font-size: calc(var(--space-l-xl) * 0.94);
+	}
+}
+
 @media (min-width: 34em) {
 	.why-list,
 	.features-list,
