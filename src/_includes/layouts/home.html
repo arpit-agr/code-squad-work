@@ -2,6 +2,12 @@
 
 {%- extends "layouts/base.html" -%}
 
+{%- block preload -%}
+  <link rel="preload" href="/scripts/scroll.js" as="script" fetchpriority="high">
+  <link rel="preload" href="/scripts/lite-yt-embed.js" as="script" fetchpriority="high">
+{%- endblock -%}
+
+
 {%- block content -%}
   {% include "partials/intro.html" %}
   {% include "partials/who-are-we.html" %}

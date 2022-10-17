@@ -1,4 +1,10 @@
 @font-face {
+	font-family: "fallback";
+	size-adjust: 102%;
+	src: local("Arial");
+}
+
+@font-face {
 	font-family: "Figtree";
 	src: url("/fonts/figtree-subset.woff2") format("woff2-variations");
 	font-weight: 300 900;

@@ -20,8 +20,8 @@
 
 :root {
 	--wght: "wght" 450;
-	--font-plain: "Figtree", sans-serif;
-	--font-special: "Figtree", sans-serif;
+	--font-plain: "Figtree", "fallback", sans-serif;
+	--font-special: "Figtree", "fallback", sans-serif;
 	--letter-spacing--1: -0.015em;
 	--letter-spacing--1: -0.03em;
 	--letter-spacing-1: 0.015em;
