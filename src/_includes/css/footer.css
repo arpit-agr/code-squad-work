@@ -1,0 +1,11 @@
+footer {
+	--cluster-horizontal-alignment: space-between;
+	/* padding-top: var(--header-padding-block);
+	padding-bottom: var(--header-padding-block); */
+	font-size: var(--step--2);
+}
+
+footer a {
+	padding-top: var(--header-padding-block);
+	padding-bottom: var(--header-padding-block);
+}

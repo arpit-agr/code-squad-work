@@ -149,7 +149,7 @@ contact:
     [
       {
         heading: "WhatsApp",
-        content: ["Please expect a reply within 24 hrs"],
+        content: ["Please expect a reply within 24 hrs TKTK"],
         buttonUrl: "https://wa.me/919920670128",
         buttonText: "Chat Now",
       },

@@ -39,6 +39,7 @@ module.exports = function(eleventyConfig) {
 
   //Shortcode
 	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   //Transforms
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
