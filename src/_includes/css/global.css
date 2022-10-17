@@ -131,7 +131,6 @@ a[href*="tel"] {
 .btn {
 	--wght: "wght" 600;
 	position: relative;
-	/* display: inline-block; */
 	padding: var(--btn-padding-block) var(--btn-padding-inline);
 	background-color: var(--btn-bg);
 	border: var(--btn-border-width) solid var(--btn-border-color);
@@ -140,27 +139,15 @@ a[href*="tel"] {
 	font-size: var(--step-0);
 	line-height: 1;
 	text-decoration: none;
-	/* box-shadow: var(--card-shadow); */
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-}
-
-.btn[data-variant="secondary"] {
-	--btn-color: var(--heading-color);
-	--btn-bg: var(--bg);
-	--btn-border-color: var(--heading-color);
-
-	text-shadow: unset;
 }
 
 .btn[data-variant="outline"] {
 	--btn-color: var(--heading-color);
 	--btn-bg: none;
 	--btn-border-color: var(--heading-color);
+	--shadow-color: var(--heading-color);
 	text-shadow: unset;
-}
-
-.btn:where(:hover, :focus) {
-	box-shadow: unset;
 }
 
 abbr {
