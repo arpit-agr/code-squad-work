@@ -100,20 +100,20 @@ how:
         heading: "School Teacher Trains the Student",
         content:
           [
-            "CodeSquad trains YOUR teachers",
+            "Code Squad trains your teachers",
             "Detailed lesson plans and presentations provided",
             "Students login for concept notes, worksheets and assessments",
-            "Grading facility provided through the CSCM platform and assessments",
+            "Assessment and Grading facility provided through the CSCM platform",
           ],
       },
       {
-        heading: "CodeSquad teaches students",
+        heading: "Code Squad teaches students",
         content:
           [
-            "CodeSquad’s teachers will teach the students online",
+            "Code Squad’s teachers will teach the students online",
             "No teaching resources required",
             "Students login for concept notes, worksheets and assessments",
-            "CodeSquad’s teachers will assess the students",
+            "Code Squad’s teachers will assess the students",
           ],
       },
     ]
