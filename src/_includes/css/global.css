@@ -20,8 +20,8 @@
 
 :root {
 	--wght: "wght" 450;
-	--font-plain: "Figtree", "Manrope", "Nunito", sans-serif;
-	--font-special: "Figtree", "Manrope", "Nunito", sans-serif;
+	--font-plain: "Figtree", sans-serif;
+	--font-special: "Figtree", sans-serif;
 	--letter-spacing--1: -0.015em;
 	--letter-spacing--1: -0.03em;
 	--letter-spacing-1: 0.015em;
@@ -34,19 +34,25 @@
 	--white: hsl(181deg 0% 100%);
 	--black: hsl(181deg 3% 12%);
 
-	--blue: hsl(210deg 100% 50%);
 	--green: hsl(170deg 89% 27%);
-	--orange: hsl(21deg 100% 48%);
+	--sea-green: hsl(181deg 89% 33%);
+	--blue: hsl(210deg 100% 50%);
 	--purple: hsl(237deg 53% 50%);
+	--indigo: hsl(256deg 100% 58%);
+	--plum: hsl(303deg 77% 31%);
 	--pink: hsl(353deg 91% 60%);
 	--red: hsl(10deg 100% 55%);
+	--orange: hsl(21deg 100% 48%);
 
-	--blue-bg: hsl(210deg 88% var(--bg-lightness));
 	--green-bg: hsl(170deg 88% var(--bg-lightness));
-	--orange-bg: hsl(21deg 88% var(--bg-lightness));
+	--sea-green-bg: hsl(181deg 88% var(--bg-lightness));
+	--blue-bg: hsl(210deg 88% var(--bg-lightness));
 	--purple-bg: hsl(237deg 88% var(--bg-lightness));
+	--indigo-bg: hsl(256deg 88% var(--bg-lightness));
+	--plum-bg: hsl(303deg 88% var(--bg-lightness));
 	--pink-bg: hsl(353deg 88% var(--bg-lightness));
 	--red-bg: hsl(10deg 88% var(--bg-lightness));
+	--orange-bg: hsl(21deg 88% var(--bg-lightness));
 }
 
 :root {
