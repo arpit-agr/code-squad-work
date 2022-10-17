@@ -1,6 +1,8 @@
-<article class="features flow wrapper">
+{% set heading = features.heading %}
+
+<article class="features flow wrapper" id={{ heading | slugify }}>
   <div class="article-heading">
-    <h2>{{ features.heading }}</h2>
+    <h2>{{ heading }}</h2>
   </div>
   <p class="features-desc step--1">
     {{ features.desc | addNbsp | safe }}

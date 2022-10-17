@@ -1,3 +1,5 @@
+{% set heading = about.heading %}
+
 {% set url = "./src/images/" + about.imageUrl %}
 {% set alt = about.imageAlt %}
 {% set sizes = about.imageSizes %}
@@ -5,9 +7,9 @@
 {% set class = about.imageClass %}
 {% set priority = about.imagePriority %}
 
-<article class="about flow wrapper">
+<article class="about flow wrapper" id={{ heading | slugify }}>
   <div class="article-heading">
-    <h2>{{ about.heading }}</h2>
+    <h2>{{ heading }}</h2>
   </div>
   <div class="cluster">
     <div class="card shadow flow">

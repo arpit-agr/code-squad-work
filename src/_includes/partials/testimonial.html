@@ -1,3 +1,5 @@
+{% set heading = testimonial.heading %}
+
 {% set url = "./src/images/" + testimonial.imageUrl %}
 {% set alt = testimonial.imageAlt %}
 {% set sizes = testimonial.imageSizes %}
@@ -5,9 +7,9 @@
 {% set class = testimonial.imageClass %}
 {% set priority = testimonial.imagePriority %}
 
-<article class="testimonial stack wrapper">
+<article class="testimonial stack wrapper" id={{ heading | slugify }}>
   <div class="article-heading">
-    <h2>{{ testimonial.heading }}</h2>
+    <h2>{{ heading }}</h2>
   </div>
   <figure class="card shadow stack">
     <blockquote class="flow">

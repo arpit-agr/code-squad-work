@@ -1,6 +1,8 @@
-<article class="why flow wrapper">
+{% set heading = why.heading %}
+
+<article class="why flow wrapper" id={{ heading | slugify }}>
   <div class="article-heading">
-    <h2>{{ why.heading }}</h2>
+    <h2>{{ heading }}</h2>
   </div>
   <ul class="why-list" role="list">
     {% for content in why.content %}
