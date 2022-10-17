@@ -36,7 +36,8 @@
 }
 
 @media (min-width: 36em) {
-	.programs-list {
+	.programs-list,
+	.contact-list {
 		--columns: 2;
 	}
 }
@@ -49,6 +50,12 @@
 	}
 
 	.why-list {
+		--columns: 3;
+	}
+}
+
+@media (min-width: 60em) {
+	.contact-list {
 		--columns: 3;
 	}
 }

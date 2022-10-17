@@ -1,0 +1,27 @@
+{% set heading = contact.heading %}
+
+<article class="flow wrapper" id={{ heading | slugify }}>
+  <div class="article-heading">
+    <h2>{{ heading }}</h2>
+  </div>
+  <dl class="contact-list grid">
+    {% for item in contact.methods %}
+      <div class="card shadow stack">
+        <dt>{{ item.heading }}</dt>
+        <dd class="stack">
+          <div class="step--1">
+            {% for content in item.content %}
+              <p>{{ content | safe }}</p>
+            {% endfor %}
+          </div>
+          <a 
+            class="btn" 
+            data-variant="primary" 
+            href={{ item.buttonUrl }}>
+            {{ item.buttonText }}
+          </a>
+        </dd>
+      </div>
+    {% endfor %}
+  </dl>
+</article>

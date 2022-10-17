@@ -1,0 +1,13 @@
+/* #contact-us {
+	--card-bg: var(--bg);
+} */
+
+#contact-us .card {
+	--stack-gap: 0;
+}
+
+#contact-us .card dd {
+	--stack-gap: var(--space-m-l);
+	--stack-vertical-alignment: space-between;
+	height: 100%;
+}
