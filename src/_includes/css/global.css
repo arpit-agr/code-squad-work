@@ -101,6 +101,7 @@ h3 {
 	font-family: var(--font-special);
 	line-height: 1.15;
 	letter-spacing: var(--letter-spacing--1);
+	text-transform: capitalize;
 }
 
 h1 {
