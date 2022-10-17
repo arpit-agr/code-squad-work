@@ -17,6 +17,10 @@ html:not([data-scroll="0"]) header {
 	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05);
 }
 
+a[aria-label="Code Squad Home"] {
+	line-height: 0;
+}
+
 .logo {
 	display: inline-block;
 	width: var(--logo-width);
