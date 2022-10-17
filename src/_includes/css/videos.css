@@ -1,0 +1,30 @@
+#videos {
+	--heading-color: var(--red);
+	--card-bg: var(--bg);
+}
+
+.video-card {
+	background-color: var(--card-bg);
+	border: var(--card-border-width) solid var(--heading-color);
+	border-radius: var(--border-radius);
+}
+
+.video-card:has(lite-youtube:not(:defined)) {
+	background-color: unset;
+	border: none;
+	box-shadow: unset;
+}
+
+.video-card lite-youtube:defined {
+	border-bottom: var(--card-border-width) solid var(--heading-color);
+	border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+lite-youtube:not(:defined) + p {
+	display: none;
+}
+
+.video-card p {
+	text-transform: capitalize;
+	padding: var(--card-padding);
+}
