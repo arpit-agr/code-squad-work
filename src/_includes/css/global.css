@@ -141,6 +141,8 @@ a[href*="tel"] {
 
 .btn {
 	--wght: "wght" 600;
+	--btn-color: var(--bg);
+	--btn-bg: var(--heading-color);
 	position: relative;
 	padding: var(--btn-padding-block) var(--btn-padding-inline);
 	background-color: var(--btn-bg);
@@ -157,7 +159,6 @@ a[href*="tel"] {
 	--btn-color: var(--heading-color);
 	--btn-bg: none;
 	--btn-border-color: var(--heading-color);
-	--shadow-color: var(--heading-color);
 	text-shadow: unset;
 }
 
