@@ -1,0 +1,36 @@
+.intro {
+	--stack-gap: var(--card-padding);
+	--stack-vertical-alignment: center;
+	--stack-horizontal-alignment: center;
+	/* min-width: 100%; */
+	/* position: relative; */
+}
+
+.intro-content {
+	--stack-gap: var(--space-m);
+	/* 100vh less header padding (block) less logo height less gap between header and intro card less gap between intro card and parents link less parents link height less gap between intro and about section */
+	min-height: calc(
+		var(--min-block-size) - (2 * var(--header-padding-block)) -
+			var(--logo-height) - var(--main-flow-space) - var(--card-padding) -
+			(1ex * var(--line-height)) - var(--section-gap)
+	);
+	min-width: min((var(--max-width) - (2 * var(--card-padding))), 100%);
+}
+
+.intro h1 {
+	font-size: var(--space-l-xl);
+	text-align: center;
+}
+
+.intro-cta {
+	--cluster-gap: var(--space-2xs-xs);
+	--cluster-horizontal-alignment: center;
+}
+
+.codewfloppy {
+	color: var(--heading-color);
+}
+
+.codewfloppy:after {
+	content: "\203A";
+}
