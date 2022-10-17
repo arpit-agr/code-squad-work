@@ -1,8 +1,7 @@
 #testimonial {
-	/* --stack-gap: var(--space-m-l); */
 	--stack-gap: var(--space-m);
-	--heading-color: var(--green);
-	--card-bg: var(--green-bg);
+	--heading-color: var(--orange);
+	--card-bg: var(--orange-bg);
 }
 
 #testimonial :where(figure, blockquote, figcaption) {

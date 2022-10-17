@@ -30,7 +30,8 @@
 }
 
 :root {
-	--bg-lightness: 95%;
+	/* --bg-lightness: 95%; */
+	--bg-lightness: 97%;
 
 	--white: hsl(181deg 0% 100%);
 	--black: hsl(181deg 3% 12%);
