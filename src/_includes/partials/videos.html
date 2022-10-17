@@ -1,10 +1,12 @@
+{% set heading = videos.heading %}
+
 <!-- TODO: checkout webc -->
-<article class="videos flow wrapper">
+<article class="flow wrapper" id={{ heading | slugify }}>
   <div class="article-heading">
-    <h2>Videos</h2>
+    <h2>{{ heading }}</h2>
   </div>
-  <ul class="videos-list" role="list">
-    {% for video in videos %}
+  <ul class="videos-list list" role="list">
+    {% for video in videos.content %}
       <li class="video-card shadow">
         <lite-youtube
           videoid={{ video.id }}

@@ -1,10 +1,10 @@
 {% set heading = programs.heading %}
 
-<article class="programs flow wrapper" id={{ heading | slugify }}>
+<article class="flow wrapper" id={{ heading | slugify }}>
   <div class="article-heading">
     <h2>{{ heading }}</h2>
   </div>
-  <dl class="programs-list">
+  <dl class="programs-list list">
     {% for item in programs.grades %}
       <div class="card shadow flow">
         <dt>{{ item.heading }}</dt>
