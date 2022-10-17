@@ -1,0 +1,45 @@
+/* .features-list li,
+.programs-list dd {
+	--cluster-gap: 0.5em;
+	--cluster-vertical-alignment: flex-start;
+	flex-wrap: nowrap;
+} */
+
+:where(.features-list, .programs-list) :where(li, dd) {
+	--cluster-gap: 0.5em;
+	--cluster-vertical-alignment: flex-start;
+	flex-wrap: nowrap;
+}
+
+.features-list li:before,
+.programs-list dd::before {
+	/* content: "●"; */
+	content: "✦";
+	color: var(--heading-color);
+	font-size: var(--step--1);
+	line-height: 1;
+	margin-top: 1ex;
+}
+
+@media (min-width: 34em) {
+	.why-list,
+	.features-list,
+	.programs-list,
+	.videos-list {
+		--columns: 2;
+	}
+}
+
+@media (min-width: 48em) {
+	.why-list {
+		--columns: 3;
+	}
+}
+
+@media (min-width: 68em) {
+	.why-list,
+	.programs-list,
+	.videos-list {
+		--columns: 4;
+	}
+}

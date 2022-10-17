@@ -27,6 +27,13 @@
 	align-items: var(--stack-horizontal-alignment, flex-start);
 }
 
+:where(.list) {
+	--columns: 1;
+	display: grid;
+	grid-template-columns: repeat(var(--columns), 1fr);
+	gap: 1em;
+}
+
 .step--1 {
 	font-size: var(--step--1);
 	letter-spacing: var(--letter-spacing-1);
