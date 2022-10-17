@@ -48,7 +48,7 @@
 	/* TODO: make the color dynamic */
 	background-image: linear-gradient(
 		transparent calc(100% - var(--card-border-width)),
-		hsl(170deg 89% 27% / 30%)
+		hsl(21deg 100% 48% / 30%)
 	);
 	background-size: var(--card-border-width) 1.5em;
 }
