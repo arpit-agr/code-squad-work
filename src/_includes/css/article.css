@@ -29,10 +29,10 @@
 	left: 0;
 	width: 100%;
 	height: var(--browser-bar-height);
-	/* TODO: make the bg color dynamic */
 	background: hsl(170deg 40% 79%);
 	border-bottom: var(--card-border-width) solid var(--heading-color);
 	border-radius: var(--border-radius) var(--border-radius) 0 0;
+	opacity: 0.33;
 }
 
 .card[data-variant="browser"]:after {
