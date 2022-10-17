@@ -1,0 +1,55 @@
+#testimonial {
+	/* --stack-gap: var(--space-m-l); */
+	--stack-gap: var(--space-m);
+	--heading-color: var(--green);
+	--card-bg: var(--green-bg);
+}
+
+#testimonial :where(figure, blockquote, figcaption) {
+	width: fit-content;
+}
+
+#testimonial figure {
+	position: relative;
+}
+
+#testimonial figure:before,
+#testimonial figure:after {
+	position: absolute;
+	color: var(--card-bg);
+	/* font-size: var(--step-7); */
+	font-size: var(--step-6);
+	line-height: 0;
+	-webkit-text-stroke: var(--card-border-width) var(--heading-color);
+	filter: drop-shadow(1px 2px 0 var(--heading-color));
+}
+
+#testimonial figure:before {
+	content: open-quote;
+	top: 0.5ex;
+	left: calc(-0.5 * var(--card-padding));
+}
+
+#testimonial figure:after {
+	content: close-quote;
+	bottom: -0.5ex;
+	right: calc(-0.5 * var(--card-padding));
+}
+
+#testimonial figcaption img {
+	width: var(--step-4);
+	height: auto;
+}
+
+#testimonial .name {
+	--wght: "wght" 700;
+}
+
+#testimonial blockquote p {
+	/* TODO: make the color dynamic */
+	background-image: linear-gradient(
+		transparent calc(100% - var(--card-border-width)),
+		hsl(170deg 89% 27% / 30%)
+	);
+	background-size: var(--card-border-width) 1.5em;
+}
