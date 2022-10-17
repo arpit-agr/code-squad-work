@@ -27,7 +27,7 @@
 	align-items: var(--stack-horizontal-alignment, flex-start);
 }
 
-:where(.list) {
+:where(.grid) {
 	--columns: 1;
 	display: grid;
 	grid-template-columns: repeat(var(--columns), 1fr);

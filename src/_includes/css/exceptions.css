@@ -42,13 +42,14 @@
 }
 
 @media (min-width: 48em) {
-	.why-list {
-		--columns: 3;
-	}
-
+	.intro-list,
 	.features-list,
 	.how-list {
 		--columns: 2;
+	}
+
+	.why-list {
+		--columns: 3;
 	}
 }
 
