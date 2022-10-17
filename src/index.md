@@ -145,6 +145,25 @@ testimonial:
   imagePriority: ""
 contact:
   heading: "Contact Us"
-  mobile: 9920670128
-  mail: "codesquadedu@gmail.com"
+  methods:
+    [
+      {
+        heading: "WhatsApp",
+        content: ["Please expect a reply within 24 hrs"],
+        buttonUrl: "https://wa.me/919920670128",
+        buttonText: "Chat Now",
+      },
+      {
+        heading: "Mobile",
+        content: ["Monday–Friday: 9am–6pm TKTK", "Saturday: 10am–4pm"],
+        buttonUrl: "tel:+919920670128",
+        buttonText: "9920670128",
+      },
+      {
+        heading: "Mail",
+        content: ["Please expect a reply within 24 hrs TKTK"],
+        buttonUrl: "mailto:codesquadedu@gmail.com",
+        buttonText: "Send a mail",
+      },
+    ]
 ---
