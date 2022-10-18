@@ -1,4 +1,14 @@
-.article-heading {
+.article-heading[data-variant="with-illustration"] {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 1em;
+}
+
+.article-heading[data-variant="with-illustration"] h2 {
+	align-self: flex-end;
+}
+
+.article-heading h2 {
 	border-left: var(--article-border-width) solid currentColor;
 	padding-left: calc(var(--card-padding) - var(--article-border-width));
 	color: var(--heading-color);

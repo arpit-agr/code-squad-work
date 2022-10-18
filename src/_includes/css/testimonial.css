@@ -1,7 +1,14 @@
 #testimonial {
 	--stack-gap: var(--space-m);
+	/* uncomment this when there is more than 1 testimonial */
+	/* --stack-horizontal-alignment: stretch; */
 	--heading-color: var(--orange);
 	--card-bg: var(--orange-bg);
+}
+
+/* temporary fix until there is only one testimonial */
+#testimonial .article-heading {
+	min-width: min(calc(42ch + (2 * var(--card-padding))), 100%);
 }
 
 #testimonial :where(figure, blockquote, figcaption) {

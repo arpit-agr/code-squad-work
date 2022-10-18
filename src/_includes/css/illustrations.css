@@ -1,0 +1,55 @@
+.illustration-container {
+	--illustration-width: var(--step-5);
+	position: relative;
+	width: var(--illustration-width);
+}
+
+.illustration {
+	position: absolute;
+	bottom: 0;
+	/* right: 0; */
+	right: var(--article-border-width);
+	width: 100%;
+	height: auto;
+	z-index: -1;
+}
+
+path[fill="#68E1FD"] {
+	fill: var(--heading-color);
+}
+
+.computer {
+	position: absolute;
+	top: calc(var(--browser-bar-height) * 0.1666666667);
+	right: var(--card-padding);
+	/* top: calc(var(--browser-bar-height) * 0.125);
+	height: calc(var(--browser-bar-height) / 1.333); */
+	width: auto;
+	height: calc(var(--browser-bar-height) / 1.5);
+}
+
+.detective {
+	translate: 0 41%;
+}
+
+.discovery {
+	translate: 0 1.1em;
+}
+
+.settings,
+.web-dev,
+.teacher {
+	translate: 0 50%;
+}
+
+.like {
+	translate: 0 66%;
+}
+
+.yt {
+	translate: 0 60%;
+}
+
+.marketing {
+	translate: 0 1.2em;
+}
