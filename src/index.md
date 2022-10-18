@@ -60,7 +60,7 @@ programs:
           [
             "Introduction to coding using Scratch Jr",
             "Construction activities using paper art",
-            "covering, shapes, seasons and nature",
+            "Covering, shapes, seasons and nature",
           ],
       },
       {
