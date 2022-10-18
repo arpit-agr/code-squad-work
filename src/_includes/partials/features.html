@@ -1,12 +1,15 @@
 {% set heading = features.heading %}
 
 <article class="flow wrapper" id={{ heading | slugify }}>
-  <div class="article-heading">
+  <div class="article-heading" data-variant="with-illustration">
     <h2>{{ heading }}</h2>
+    <div class="illustration-container">
+      {%- include "snippets/settings.html" -%}
+    </div>
   </div>
-  <p class="features-desc step--1">
+  <!-- <p class="features-desc step--1">
     {{ features.desc | addNbsp | safe }}
-  </p>
+  </p> -->
   <ul class="features-list card shadow flow" role="list">
     {% for content in features.content %}
       <li class="cluster">

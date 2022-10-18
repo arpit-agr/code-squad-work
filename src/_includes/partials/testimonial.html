@@ -8,8 +8,11 @@
 {% set priority = testimonial.imagePriority %}
 
 <article class="stack wrapper" id={{ heading | slugify }}>
-  <div class="article-heading">
+  <div class="article-heading" data-variant="with-illustration">
     <h2>{{ heading }}</h2>
+    <div class="illustration-container">
+      {%- include "snippets/like.html" -%}
+    </div>
   </div>
   <figure class="card shadow stack">
     <blockquote class="flow">

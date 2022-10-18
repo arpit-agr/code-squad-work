@@ -8,10 +8,13 @@
 {% set priority = about.imagePriority %}
 
 <article class="flow wrapper" id={{ heading | slugify }}>
-  <div class="article-heading">
+  <div class="article-heading" data-variant="with-illustration">
     <h2>{{ heading }}</h2>
+    <div class="illustration-container">
+      {%- include "snippets/detective.html" -%}
+    </div>
   </div>
-<div class="intro-list grid">
+  <div class="intro-list grid">
     <div class="card shadow flow">
       {% for content in about.content %}
       <p>{{ content }}</p>

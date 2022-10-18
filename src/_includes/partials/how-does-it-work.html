@@ -1,8 +1,11 @@
 {% set heading = how.heading %}
 
 <article class="flow wrapper" id={{ heading | slugify }}>
-  <div class="article-heading">
+  <div class="article-heading" data-variant="with-illustration">
     <h2>{{ heading }}</h2>
+    <div class="illustration-container">
+      {%- include "snippets/teacher.html" -%}
+    </div>
   </div>
   <div class="how-list grid">
     {% for item in how.content %}

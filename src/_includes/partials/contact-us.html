@@ -1,8 +1,11 @@
 {% set heading = contact.heading %}
 
 <article class="flow wrapper" id={{ heading | slugify }}>
-  <div class="article-heading">
+  <div class="article-heading" data-variant="with-illustration">
     <h2>{{ heading }}</h2>
+    <div class="illustration-container">
+      {%- include "snippets/marketing.html" -%}
+    </div>
   </div>
   <dl class="contact-list grid">
     {% for item in contact.methods %}
