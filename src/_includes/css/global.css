@@ -2,7 +2,7 @@
 	--max-width: 84rem;
 	/* --gutter: var(--space-xs-s); */
 	--gutter: var(--space-s-m);
-	--section-gap: var(--space-xl-2xl);
+	--section-gap: var(--space-2xl-3xl);
 	--header-padding-block: var(--space-2xs);
 	--logo-width: var(--step-7);
 	/* dividing by 4.5914669784 gives me the logo height */
@@ -92,7 +92,7 @@ body {
 }
 
 main {
-	--main-flow-space: calc(var(--section-gap) - var(--logo-height));
+	--main-flow-space: var(--logo-height);
 	--flow-space: var(--main-flow-space);
 	--stack-gap: var(--section-gap);
 	margin-bottom: var(--section-gap);
