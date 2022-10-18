@@ -29,7 +29,7 @@ why:
     - "Regularly updated, always relevant"
     - "Expert support, whenever you need"
 features:
-  heading: "CSCM features"
+  heading: "Platform features"
   desc: "CSCM = Code Squad Code Management platform"
   content:
     # - "CodeSquad Code Management platform"

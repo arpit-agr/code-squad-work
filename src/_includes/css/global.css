@@ -182,3 +182,7 @@ dt {
 /* dt::after {
 	content: ": ";
 } */
+
+svg {
+	max-width: 100%;
+}
