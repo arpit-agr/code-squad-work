@@ -157,7 +157,7 @@ contact:
         heading: "Mobile",
         content: ["Monday–Friday: 9am–6pm TKTK", "Saturday: 10am–4pm"],
         buttonUrl: "tel:+919920670128",
-        buttonText: "9920670128",
+        buttonText: "+91-9920670128",
       },
       {
         heading: "Mail",
