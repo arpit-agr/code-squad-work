@@ -2,7 +2,7 @@
 title: "Online platform for schools to teach computer science to grades 1-10"
 subtitle: "Simplify coding and make it fun & effective for your classrooms!!"
 codeWfloppy:
-  content: "For parents looking for private tutors TKTK"
+  content: "For parents looking for online classes"
   url: "https://codewfloppy.com/"
 layout: "layouts/home.html"
 about:
