@@ -8,7 +8,7 @@ layout: "layouts/home.html"
 about:
   heading: "Who are we"
   content:
-    - "Code Squad is an online learning platform designed to help schools implement a coding program for grades 1-10. Our platform includes curriculum, tools, and resources required to run a successful coding program, without any external teachers."
+    - "CodeSquad is an online learning platform designed to help schools implement a coding program for grades 1-10. Our platform includes curriculum, tools, and resources required to run a successful coding program, without any external teachers."
     - "We are an edtech company with proven experience in teaching coding across geographies. We are on a mission to inspire the next generation to be coders and not fashionistas."
     - "Simplify coding & make it fun & effective for your classrooms!!"
   imageUrl: "kids.jpg"
@@ -30,7 +30,7 @@ why:
     - "Expert support, whenever you need"
 features:
   heading: "Platform features"
-  desc: "CSCM = Code Squad Code Management platform"
+  desc: "CSCM = CodeSquad Code Management platform"
   content:
     # - "CodeSquad Code Management platform"
     - "All-in-one platform runs on any browser, any device"
@@ -100,20 +100,20 @@ how:
         heading: "School Teacher Trains the Student",
         content:
           [
-            "Code Squad trains your teachers",
+            "CodeSquad trains your teachers",
             "Detailed lesson plans and presentations provided",
             "Students login for concept notes, worksheets and assessments",
             "Assessment and Grading facility provided through the CSCM platform",
           ],
       },
       {
-        heading: "Code Squad teaches students",
+        heading: "CodeSquad teaches students",
         content:
           [
-            "Code Squad’s teachers will teach the students online",
+            "CodeSquad’s teachers will teach the students online",
             "No teaching resources required",
             "Students login for concept notes, worksheets and assessments",
-            "Code Squad’s teachers will assess the students",
+            "CodeSquad’s teachers will assess the students",
           ],
       },
     ]
@@ -132,7 +132,7 @@ testimonial:
     [
       "We have been associated with CodeSquad for the last eight months during this pandemic. The entire student, parent and teaching faculty at Leh Valley School feel that this was the best decision that we could have taken.",
       "We started the coding classes at the time of the second lockdown and introducing a new, interesting subject like coding helped keep all the children engaged and excited. Children would wait eagerly for their coding classes and rarely missed any.",
-      "It was a pleasure being associated with Code Squad. Thank you from the mountains of Ladakh!",
+      "It was a pleasure being associated with CodeSquad. Thank you from the mountains of Ladakh!",
     ]
   person: "TKTK Tundup"
   designation: "Principal"
