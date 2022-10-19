@@ -1,7 +1,7 @@
 header {
 	--flow-space: 0;
 	--cluster-horizontal-alignment: space-between;
-	position: fixed;
+	/* position: fixed; */
 	position: sticky;
 	top: 0;
 	width: 100%;

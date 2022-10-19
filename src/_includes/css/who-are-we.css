@@ -1,6 +1,10 @@
 #who-are-we {
 	--heading-color: var(--orange);
 	--card-bg: var(--orange-bg);
+	scroll-margin-top: calc(
+		var(--logo-height) +
+			(2 * var(--header-padding-block) + (var(--section-gap) / 2))
+	);
 }
 
 #who-are-we picture {
