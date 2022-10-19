@@ -134,7 +134,7 @@ testimonial:
       "We started the coding classes at the time of the second lockdown and introducing a new, interesting subject like coding helped keep all the children engaged and excited. Children would wait eagerly for their coding classes and rarely missed any.",
       "It was a pleasure being associated with CodeSquad. Thank you from the mountains of Ladakh!",
     ]
-  person: "TKTK Tundup"
+  person: "Tundup Aangmo"
   designation: "Principal"
   organisation: "Leh Valley School"
   imageUrl: "leh-valley-school.png"
