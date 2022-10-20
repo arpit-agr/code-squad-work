@@ -49,7 +49,7 @@ features:
     - "Use and customize resources from the content marketplace"
     - "Publish a course, lesson, or assignment to the content marketplace"
     - "Duplicate a lesson or assignment"
-    - "<abbr title='Multiple Choice Questions'>MCQs</abbr>, short answer questions, Parson’s questions"
+    - "MCQs, short answer questions, Parson’s questions"
 programs:
   heading: "Programs"
   grades:
