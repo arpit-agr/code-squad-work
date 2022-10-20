@@ -18,7 +18,7 @@
             autoload
           {% endif %}>
           <noscript>
-            View {{ video.title | dump | safe }} video on <a href="https://www.youtube.com/watch?v={{ video.id }}">Youtube</a>
+            View <a href="https://www.youtube.com/watch?v={{ video.id }}">{{ video.title | dump | safe }}</a> video on Youtube
           </noscript>
         </lite-youtube>
         <p aria-hidden="true">{{ video.title }}</p>
