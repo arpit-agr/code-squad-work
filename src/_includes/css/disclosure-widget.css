@@ -1,5 +1,4 @@
 .view-all {
-	--wght: "wght" 600;
 	padding-left: var(--card-padding);
 	font-size: var(--step-1);
 	color: var(--heading-color);

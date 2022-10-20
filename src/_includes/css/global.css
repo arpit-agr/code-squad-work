@@ -147,7 +147,9 @@ strong {
 a {
 	--wght: "wght" 500;
 	color: inherit;
-	text-underline-offset: 0.15em;
+	text-decoration-line: underline;
+	text-underline-offset: 0.2em;
+	text-decoration-skip-ink: none;
 }
 
 a[href*="tel"] {
