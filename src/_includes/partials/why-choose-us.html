@@ -7,9 +7,12 @@
       {%- include "snippets/discovery.html" -%}
     </div>
   </div>
-  <ul class="why-list grid" role="list">
+  <ul class="why-list grid disclosure-widget" id="why-list" role="list">
     {% for content in why.content %}
       <li class="card shadow stack"><p>{{ content | safe }}</p></li>
     {% endfor %}
   </ul>
+  <button class="view-all" aria-expanded="false" aria-controls="why-list">
+    View More <span class="vh">items in {{ heading }}</span>
+  </button>
 </article>

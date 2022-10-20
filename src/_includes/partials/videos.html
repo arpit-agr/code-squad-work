@@ -7,7 +7,7 @@
       {%- include "snippets/youtube.html" -%}
     </div>
   </div>
-  <ul class="videos-list grid" role="list">
+  <ul class="videos-list grid disclosure-widget" id="videos-list" role="list">
     {% for video in videos.content %}
       <li class="video-card shadow">
         <lite-youtube
@@ -25,4 +25,7 @@
       </li>
     {% endfor %}
   </ul>
+  <button class="view-all" aria-expanded="false" aria-controls="videos-list">
+    View more <span class="vh">items in {{ heading }}</span>
+  </button>
 </article>
