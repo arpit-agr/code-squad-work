@@ -10,7 +10,12 @@
   <dl class="contact-list grid">
     {% for item in contact.methods %}
       <div class="card shadow stack">
-        <dt>{{ item.heading }}</dt>
+        <dt class="cluster">
+          <span class="">{{ item.heading }}</span>
+          <span class="contact-icon">
+            {%- include item.icon -%}
+          </span>
+        </dt>
         <dd class="stack">
           <div class="step--1">
             {% for content in item.content %}
