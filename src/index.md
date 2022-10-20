@@ -149,18 +149,21 @@ contact:
     [
       {
         heading: "WhatsApp",
+        icon: "snippets/whatsapp.html",
         content: ["Please expect a reply within 24 hrs TKTK"],
         buttonUrl: "https://wa.me/919920670128",
         buttonText: "Chat Now",
       },
       {
         heading: "Mobile",
+        icon: "snippets/telephone.html",
         content: ["Monday–Friday: 9am–6pm TKTK", "Saturday: 10am–4pm"],
         buttonUrl: "tel:+919920670128",
         buttonText: "+91-9920670128",
       },
       {
         heading: "Mail",
+        icon: "snippets/mail.html",
         content: ["Please expect a reply within 24 hrs TKTK"],
         buttonUrl: "mailto:codesquadedu@gmail.com",
         buttonText: "Send a mail",
