@@ -47,3 +47,15 @@
 .shadow {
 	box-shadow: 0.1333333333em 0.2em 0 0 var(--shadow-color, var(--heading-color));
 }
+
+.vh {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}
