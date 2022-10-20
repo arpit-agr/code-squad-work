@@ -11,6 +11,7 @@
 
 .why-list li::after {
 	content: counter(eyebrow, decimal-leading-zero);
+	alt: "";
 	width: 100%;
 	color: var(--heading-color);
 	/* padding-bottom: var(--space-m); */
