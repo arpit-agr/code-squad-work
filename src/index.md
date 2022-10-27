@@ -1,5 +1,5 @@
 ---
-title: "Online platform for schools to teach computer science to grades 1-10"
+title: "A platform for schools to teach computer science to grades 1-10"
 subtitle: "Simplify coding and make it fun & effective for your classrooms!!"
 codeWfloppy:
   content: "For parents looking for online classes"
@@ -8,8 +8,9 @@ layout: "layouts/home.html"
 about:
   heading: "Who are we"
   content:
-    - "CodeSquad is an online learning platform designed to help schools implement a coding program for grades 1-10. Our platform includes curriculum, tools, and resources required to run a successful coding program, without any external teachers."
-    - "We are an edtech company with proven experience in teaching coding across geographies. We are on a mission to inspire the next generation to be coders and not fashionistas."
+    - "We are on a mission to inspire the next generation to be coders and not fashionistas."
+    - "An online learning platform designed to help schools implement a coding program for grades 1-10. Includes curriculum, tools, and resources required to run a successful Coding program, without any external teachers."
+    - "Created by CodeSquad, an edtech company with proven experience in teaching coding across geographies"
     - "Simplify coding & make it fun & effective for your classrooms!!"
   imageUrl: "kids.jpg"
   imageAlt: "Kids studying coding on a laptop in a classroom"
@@ -20,36 +21,38 @@ about:
 why:
   heading: "Why choose us?"
   content:
-    - 'Curriculum friendly to meet the <abbr title="The Office for Standards in Education, Children''s Services and Skills">OFSTED</abbr> requirements'
-    - "Taught more than 10,000 kids across 5 countries incl. kids from elite schools in Mumbai"
-    - "Simple online web portal (CSCM) equips schools to teach and manage students"
-    - "Integrates math, science, literature, history and geography reinforcing student learning"
-    - "Student assessment tools available on the CSCM platform"
+    - 'Curriculum aligned with <abbr title="The Office for Standards in Education, Children''s Services and Skills">OFSTED</abbr> requirements'
+    - "Taught more than 10,000 kids across 5 countries including kids from premium schools in Mumbai"
+    - "A curriculum which integrates Math, Science, Literature, History and Geography using coding reinforcing student learning"
     - "Low-cost alternative to extra staff or on-going training"
     - "Regularly updated, always relevant"
-    - "Expert support, whenever you need"
 features:
-  heading: "Platform features"
-  desc: "CSCM = CodeSquad Code Management platform"
-  content:
-    # - "CodeSquad Code Management platform"
-    - "All-in-one platform runs on any browser, any device"
-    - "Unlimited learners and courses"
-    - "Unlimited interactive learning content and assessment authoring"
-    - "Collaborative <abbr title='Integrated development environment'>IDE</abbr> supports 10+ languages"
-    - "Powerful auto-grading and automated feedback in real time"
-    - "Create manage sections of learners in your courses"
-    - "Assign to sections or all learners"
-    - "Individual logins available for school admin, teacher and students"
-    - "Set due dates for assignments"
-    - "View learner work in real-time"
-    - "Real-time learner engagement and progress tracking"
-    - "Create courses from scratch"
-    - "Create courses from templates"
-    - "Use and customize resources from the content marketplace"
-    - "Publish a course, lesson, or assignment to the content marketplace"
-    - "Duplicate a lesson or assignment"
-    - "MCQs, short answer questions, Parson’s questions"
+  heading: "What is CSCM?"
+  desc: "CodeSquad Code Management platform"
+  items:
+    [
+      {
+        heading: "Courses",
+        content:
+          [
+            "All-in-one platform runs on any browser, any device",
+            "Unlimited learners and courses",
+            "Unlimited interactive learning content and assessment authoring",
+            "Collaborative IDE supports 10+ languages",
+          ],
+      },
+      {
+        heading: "Assignments",
+        content:
+          [
+            "Powerful auto-grading and automated feedback in real time",
+            "Set due dates for assignments",
+            "View learner work in real-time",
+            "Real-time learner engagement and progress tracking",
+            "Mulitple choice questions, Short answer questions, Parson’s questions",
+          ],
+      },
+    ]
 programs:
   heading: "Programs"
   grades:
@@ -57,38 +60,27 @@ programs:
       {
         heading: "Grade 1 - Grade 2",
         content:
-          [
-            "Introduction to coding using Scratch Jr",
-            "Construction activities using paper art",
-            "Covering, shapes, seasons and nature",
-          ],
+          ["Intro to coding using Scratch Jr", "Unplugged STEAM activities"],
       },
       {
         heading: "Grade 3 - Grade 5",
         content:
           [
             "Game programming using Scratch",
-            "Design thinking & Engineering",
             "Introduction to AI & <abbr title='Machine learning'>ML</abbr>",
           ],
       },
       {
         heading: "Grade 6 - Grade 8",
-        content:
-          [
-            "Dive into Generative Art using Kojo",
-            "Mobile App development",
-            "Introduction to HTML, CSS, Javascript",
-          ],
+        content: ["Mobile App development", "Intro to HTML, CSS, Javascript"],
       },
       {
         heading: "Grade 9 - Grade 10",
         content:
           [
             "Python Programming",
-            "Javascript Programming",
             "Cybersecurity",
-            "Introduction to Cryptocurrency & <abbr title='Non-fungible tokens'>NFTs</abbr>",
+            "Intro to Cryptocurrency & <abbr title='Non-fungible tokens'>NFTs</abbr>",
           ],
       },
     ]
@@ -97,20 +89,18 @@ how:
   content:
     [
       {
-        heading: "School Teacher Trains the Student",
+        heading: "CodeSquad trains YOUR teachers",
         content:
           [
-            "CodeSquad trains your teachers",
             "Detailed lesson plans and presentations provided",
             "Students login for concept notes, worksheets and assessments",
-            "Assessment and Grading facility provided through the CSCM platform",
+            "Grading facility provided through the CSCM platform and assessments",
           ],
       },
       {
         heading: "CodeSquad teaches students",
         content:
           [
-            "CodeSquad’s teachers will teach the students online",
             "No teaching resources required",
             "Students login for concept notes, worksheets and assessments",
             "CodeSquad’s teachers will assess the students",
@@ -119,12 +109,13 @@ how:
     ]
 videos:
   heading: "Videos"
-  content: [
+  content:
+    [
       { id: "QGOB3R8kyF8", title: "Math make 10" },
       { id: "nbEJEV2SXf4", title: "Interactive map 2" },
       { id: "5Ai1VrJ1Qjs", title: "HTML Hangman" },
       { id: "BaSTWUkLGog", title: "Mask NoMask" },
-      # { id: "0JbUkIwkpEQ", title: "Python Webmap" },
+      { id: "0JbUkIwkpEQ", title: "Python Webmap" },
     ]
 testimonial:
   heading: "Testimonial"
