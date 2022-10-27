@@ -19,11 +19,10 @@
 }
 
 :root {
-	--wght: "wght" 450;
-	--font-plain: "Figtree", "fallback", sans-serif;
-	--font-special: "Figtree", "fallback", sans-serif;
+	--wght: "wght" 500;
+	--font-plain: "Nunito", sans-serif;
+	--font-special: "Nunito", sans-serif;
 	--letter-spacing--1: -0.015em;
-	--letter-spacing--1: -0.03em;
 	--letter-spacing-1: 0.015em;
 	--letter-spacing-2: 0.03em;
 	--line-height: 1.5;
@@ -112,7 +111,7 @@ main {
 h1,
 h2,
 h3 {
-	--wght: "wght" 600;
+	--wght: "wght" 800;
 	font-family: var(--font-special);
 	text-transform: capitalize;
 }
@@ -141,11 +140,16 @@ p {
 }
 
 strong {
-	--wght: "wght" 600;
+	--wght: "wght" 800;
+}
+
+a,
+.btn {
+	--wght: "wght" 800;
+	font-family: var(--font-special);
 }
 
 a {
-	--wght: "wght" 500;
 	color: inherit;
 	text-decoration-line: underline;
 	text-underline-offset: 0.2em;
@@ -157,7 +161,6 @@ a[href*="tel"] {
 }
 
 .btn {
-	--wght: "wght" 600;
 	--btn-color: var(--bg);
 	--btn-bg: var(--heading-color);
 	position: relative;
@@ -184,7 +187,8 @@ abbr {
 }
 
 dt {
-	--wght: "wght" 600;
+	--wght: "wght" 800;
+	font-family: var(--font-special);
 	font-size: var(--step-1);
 }
 
