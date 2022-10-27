@@ -13,7 +13,7 @@
 	--card-padding: var(--space-s);
 	--card-border-width: 1px;
 	--article-border-width: var(--space-3xs-2xs);
-	--btn-border-width: var(--card-border-width);
+	--btn-border-width: calc(2 * var(--card-border-width));
 	--border-radius: var(--step--3);
 	--btn-border-radius: var(--step--4);
 }
