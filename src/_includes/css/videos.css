@@ -25,6 +25,7 @@ lite-youtube:not(:defined) + p {
 }
 
 .video-card p {
+	--wght: "wght" 800;
 	text-transform: capitalize;
 	padding: var(--card-padding);
 }
