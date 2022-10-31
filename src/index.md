@@ -12,12 +12,19 @@ about:
     - "An online learning platform designed to help schools implement a coding program for grades 1-10. Includes curriculum, tools, and resources required to run a successful Coding program, without any external teachers."
     - "Created by CodeSquad, an edtech company with proven experience in teaching coding across geographies"
     - "Simplify coding & make it fun & effective for your classrooms!!"
-  imageUrl: "kids.jpg"
-  imageAlt: "Kids studying coding on a laptop in a classroom"
+  imageUrl: "kid.jpg"
+  imageAlt: "Kid studying coding on a computer in a classroom"
   imageSizes: "(max-width: 74.25em) 100vw, 50vw"
   imageLoading: "lazy"
   imageClass: "img-kids"
   imagePriority: ""
+  sectionImage:
+    url: "kid-n-teacher.webp"
+    alt: ""
+    sizes: "(max-width: 74.25em) 400px, 400px"
+    loading: "lazy"
+    class: "section-image"
+    priority: ""
 why:
   heading: "Why choose us?"
   content:
@@ -26,6 +33,13 @@ why:
     - "A curriculum which integrates Math, Science, Literature, History and Geography using coding reinforcing student learning"
     - "Low-cost alternative to extra staff or on-going training"
     - "Regularly updated, always relevant"
+  sectionImage:
+    url: "kid-w-computer.webp"
+    alt: ""
+    sizes: "(max-width: 74.25em) 400px, 400px"
+    loading: "lazy"
+    class: "section-image"
+    priority: ""
 features:
   heading: "What is CSCM?"
   desc: "CodeSquad Code Management platform"
@@ -53,6 +67,13 @@ features:
           ],
       },
     ]
+  sectionImage:
+    url: "hi-kid.webp"
+    alt: ""
+    sizes: "(max-width: 74.25em) 400px, 400px"
+    loading: "lazy"
+    class: "section-image"
+    priority: ""
 programs:
   heading: "Programs"
   grades:
@@ -84,6 +105,13 @@ programs:
           ],
       },
     ]
+  sectionImage:
+    url: "coding-kid.webp"
+    alt: ""
+    sizes: "(max-width: 74.25em) 400px, 400px"
+    loading: "lazy"
+    class: "section-image"
+    priority: ""
 how:
   heading: "How Does it work?"
   content:
@@ -107,6 +135,13 @@ how:
           ],
       },
     ]
+  sectionImage:
+    url: "girl-boy.webp"
+    alt: ""
+    sizes: "(max-width: 74.25em) 400px, 400px"
+    loading: "lazy"
+    class: "section-image"
+    priority: ""
 videos:
   heading: "Videos"
   content:
@@ -117,6 +152,13 @@ videos:
       { id: "BaSTWUkLGog", title: "Mask NoMask" },
       { id: "0JbUkIwkpEQ", title: "Python Webmap" },
     ]
+  sectionImage:
+    url: "multiple-kids.webp"
+    alt: ""
+    sizes: "(max-width: 74.25em) 400px, 400px"
+    loading: "lazy"
+    class: "section-image"
+    priority: ""
 testimonial:
   heading: "Testimonial"
   content:
@@ -134,6 +176,13 @@ testimonial:
   imageLoading: "lazy"
   imageClass: ""
   imagePriority: ""
+  sectionImage:
+    url: "girl-w-computer.webp"
+    alt: ""
+    sizes: "(max-width: 74.25em) 400px, 400px"
+    loading: "lazy"
+    class: "section-image"
+    priority: ""
 contact:
   heading: "Contact Us"
   methods:
@@ -160,4 +209,11 @@ contact:
         buttonText: "Send a mail",
       },
     ]
+  sectionImage:
+    url: "kid-green-bg.webp"
+    alt: ""
+    sizes: "(max-width: 74.25em) 400px, 400px"
+    loading: "lazy"
+    class: "section-image"
+    priority: ""
 ---
