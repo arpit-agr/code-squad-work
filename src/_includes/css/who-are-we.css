@@ -1,17 +1,18 @@
 #who-are-we {
-	--heading-color: var(--orange);
-	--card-bg: var(--orange-bg);
+	--heading-color: var(--blue);
+	--card-bg: var(--blue-bg);
 	scroll-margin-top: calc(
 		var(--logo-height) +
 			(2 * var(--header-padding-block) + (var(--section-gap) / 2))
 	);
 }
 
-#who-are-we picture {
+#who-are-we .intro-list picture {
 	position: relative;
+	/* filter: drop-shadow(0.1333333333em 0.2em 0.2em hsl(0deg 0% 0% / 25%)); */
 }
 
-#who-are-we picture:before {
+/* #who-are-we .intro-list picture:before {
 	content: "";
 	position: absolute;
 	width: 90%;
@@ -20,7 +21,7 @@
 	left: 5%;
 	background: hsl(0deg 0% 0% / 25%);
 	filter: blur(15px);
-}
+} */
 
 .img-kids {
 	height: 100%;
@@ -28,4 +29,13 @@
 	object-fit: cover;
 	border-radius: var(--border-radius);
 	rotate: -1deg;
+}
+
+@media (min-width: 60em) {
+	.img-kids {
+		mask: url(/images/blob.svg);
+		-webkit-mask: url(/images/blob.svg);
+		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
+	}
 }
