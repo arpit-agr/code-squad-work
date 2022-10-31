@@ -1,10 +1,16 @@
 {% set heading = features.heading %}
 
+{% set sectionUrl = "./src/images/" + features.sectionImage.url %}
+{% set sectionAlt = features.sectionImage.alt %}
+{% set sectionSizes = features.sectionImage.sizes %}
+{% set sectionLoading = features.sectionImage.loading %}
+{% set sectionClass = features.sectionImage.class %}
+{% set sectionPriority = features.sectionImage.priority %}
+
 <article class="flow wrapper" id={{ heading | slugify }}>
-  <div class="article-heading" data-variant="with-illustration">
+  <div class="article-heading flow">
+    {% image sectionUrl, sectionAlt, sectionSizes, sectionLoading, sectionClass %}
     <h2>{{ heading }}</h2>
-    <div class="illustration-container">
-      {%- include "snippets/settings.html" -%}
     </div>
   </div>
   <!-- <p class="features-desc step--1">

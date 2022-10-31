@@ -1,5 +1,12 @@
 {% set heading = about.heading %}
 
+{% set sectionUrl = "./src/images/" + about.sectionImage.url %}
+{% set sectionAlt = about.sectionImage.alt %}
+{% set sectionSizes = about.sectionImage.sizes %}
+{% set sectionLoading = about.sectionImage.loading %}
+{% set sectionClass = about.sectionImage.class %}
+{% set sectionPriority = about.sectionImage.priority %}
+
 {% set url = "./src/images/" + about.imageUrl %}
 {% set alt = about.imageAlt %}
 {% set sizes = about.imageSizes %}
@@ -8,11 +15,9 @@
 {% set priority = about.imagePriority %}
 
 <article class="flow wrapper" id={{ heading | slugify }}>
-  <div class="article-heading" data-variant="with-illustration">
+  <div class="article-heading flow">
+    {% image sectionUrl, sectionAlt, sectionSizes, sectionLoading, sectionClass %}
     <h2>{{ heading }}</h2>
-    <div class="illustration-container">
-      {%- include "snippets/detective.html" -%}
-    </div>
   </div>
   <div class="intro-list grid">
     <div class="card shadow flow">

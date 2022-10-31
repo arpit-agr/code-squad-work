@@ -1,10 +1,16 @@
 {% set heading = programs.heading %}
 
-<article class="flow wrapper" id={{ heading | slugify }}>
-  <div class="article-heading" data-variant="with-illustration">
+{% set sectionUrl = "./src/images/" + programs.sectionImage.url %}
+{% set sectionAlt = programs.sectionImage.alt %}
+{% set sectionSizes = programs.sectionImage.sizes %}
+{% set sectionLoading = programs.sectionImage.loading %}
+{% set sectionClass = programs.sectionImage.class %}
+{% set sectionPriority = programs.sectionImage.priority %}
+
+<article class="flow wrapper" id={{ heading | slugify }} >
+  <div class="article-heading flow">
+    {% image sectionUrl, sectionAlt, sectionSizes, sectionLoading, sectionClass %}
     <h2>{{ heading }}</h2>
-    <div class="illustration-container">
-      {%- include "snippets/web-dev.html" -%}
     </div>
   </div>
   <dl class="programs-list grid">

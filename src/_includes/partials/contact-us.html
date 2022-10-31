@@ -1,11 +1,16 @@
 {% set heading = contact.heading %}
 
+{% set sectionUrl = "./src/images/" + contact.sectionImage.url %}
+{% set sectionAlt = contact.sectionImage.alt %}
+{% set sectionSizes = contact.sectionImage.sizes %}
+{% set sectionLoading = contact.sectionImage.loading %}
+{% set sectionClass = contact.sectionImage.class %}
+{% set sectionPriority = contact.sectionImage.priority %}
+
 <article class="flow wrapper" id={{ heading | slugify }}>
-  <div class="article-heading" data-variant="with-illustration">
+  <div class="article-heading flow">
+    {% image sectionUrl, sectionAlt, sectionSizes, sectionLoading, sectionClass %}
     <h2>{{ heading }}</h2>
-    <div class="illustration-container">
-      {%- include "snippets/marketing.html" -%}
-    </div>
   </div>
   <dl class="contact-list grid">
     {% for item in contact.methods %}

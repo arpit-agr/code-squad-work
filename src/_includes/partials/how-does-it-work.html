@@ -1,11 +1,16 @@
 {% set heading = how.heading %}
 
+{% set sectionUrl = "./src/images/" + how.sectionImage.url %}
+{% set sectionAlt = how.sectionImage.alt %}
+{% set sectionSizes = how.sectionImage.sizes %}
+{% set sectionLoading = how.sectionImage.loading %}
+{% set sectionClass = how.sectionImage.class %}
+{% set sectionPriority = how.sectionImage.priority %}
+
 <article class="flow wrapper" id={{ heading | slugify }}>
-  <div class="article-heading" data-variant="with-illustration">
+  <div class="article-heading flow">
+    {% image sectionUrl, sectionAlt, sectionSizes, sectionLoading, sectionClass %}
     <h2>{{ heading }}</h2>
-    <div class="illustration-container">
-      {%- include "snippets/teacher.html" -%}
-    </div>
   </div>
   <div class="how-list grid">
     {% for item in how.content %}

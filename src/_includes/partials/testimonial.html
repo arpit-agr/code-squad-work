@@ -7,13 +7,19 @@
 {% set class = testimonial.imageClass %}
 {% set priority = testimonial.imagePriority %}
 
-<article class="stack wrapper" id={{ heading | slugify }}>
-  <div class="article-heading" data-variant="with-illustration">
+{% set sectionUrl = "./src/images/" + testimonial.sectionImage.url %}
+{% set sectionAlt = testimonial.sectionImage.alt %}
+{% set sectionSizes = testimonial.sectionImage.sizes %}
+{% set sectionLoading = testimonial.sectionImage.loading %}
+{% set sectionClass = testimonial.sectionImage.class %}
+{% set sectionPriority = testimonial.sectionImage.priority %}
+
+<article class="flow wrapper" id={{ heading | slugify }}>
+  <div class="article-heading flow">
+    {% image sectionUrl, sectionAlt, sectionSizes, sectionLoading, sectionClass %}
     <h2>{{ heading }}</h2>
-    <div class="illustration-container">
-      {%- include "snippets/like.html" -%}
     </div>
-  </div>
+  
   <figure class="card shadow stack">
     <blockquote class="flow">
       {% for content in testimonial.content %}

@@ -1,11 +1,16 @@
 {% set heading = videos.heading %}
 
+{% set sectionUrl = "./src/images/" + videos.sectionImage.url %}
+{% set sectionAlt = videos.sectionImage.alt %}
+{% set sectionSizes = videos.sectionImage.sizes %}
+{% set sectionLoading = videos.sectionImage.loading %}
+{% set sectionClass = videos.sectionImage.class %}
+{% set sectionPriority = videos.sectionImage.priority %}
+
 <article class="flow wrapper" id={{ heading | slugify }}>
-  <div class="article-heading" data-variant="with-illustration">
+  <div class="article-heading flow">
+    {% image sectionUrl, sectionAlt, sectionSizes, sectionLoading, sectionClass %}
     <h2>{{ heading }}</h2>
-    <div class="illustration-container">
-      {%- include "snippets/youtube.html" -%}
-    </div>
   </div>
   <ul class="videos-list grid disclosure-widget" id="videos-list" role="list">
     {% for video in videos.content %}

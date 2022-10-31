@@ -1,11 +1,16 @@
 {% set heading = why.heading %}
 
+{% set sectionUrl = "./src/images/" + why.sectionImage.url %}
+{% set sectionAlt = why.sectionImage.alt %}
+{% set sectionSizes = why.sectionImage.sizes %}
+{% set sectionLoading = why.sectionImage.loading %}
+{% set sectionClass = why.sectionImage.class %}
+{% set sectionPriority = why.sectionImage.priority %}
+
 <article class="flow wrapper" id={{ heading | slugify }}>
-  <div class="article-heading" data-variant="with-illustration">
+  <div class="article-heading flow">
+    {% image sectionUrl, sectionAlt, sectionSizes, sectionLoading, sectionClass %}
     <h2>{{ heading }}</h2>
-    <div class="illustration-container">
-      {%- include "snippets/discovery.html" -%}
-    </div>
   </div>
   <ul class="why-list grid disclosure-widget" id="why-list" role="list">
     {% for content in why.content %}
