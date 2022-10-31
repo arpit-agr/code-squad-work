@@ -79,24 +79,24 @@ programs:
   grades:
     [
       {
-        heading: "Grade 1 - Grade 2",
+        heading: "Grade 1-2",
         content:
           ["Intro to coding using Scratch Jr", "Unplugged STEAM activities"],
       },
       {
-        heading: "Grade 3 - Grade 5",
+        heading: "Grade 3-5",
         content:
           [
             "Game programming using Scratch",
-            "Introduction to AI & <abbr title='Machine learning'>ML</abbr>",
+            "Intro to AI & <abbr title='Machine learning'>ML</abbr>",
           ],
       },
       {
-        heading: "Grade 6 - Grade 8",
+        heading: "Grade 6-8",
         content: ["Mobile App development", "Intro to HTML, CSS, Javascript"],
       },
       {
-        heading: "Grade 9 - Grade 10",
+        heading: "Grade 9-10",
         content:
           [
             "Python Programming",
@@ -144,13 +144,12 @@ how:
     priority: ""
 videos:
   heading: "Videos"
-  content:
-    [
+  content: [
       { id: "QGOB3R8kyF8", title: "Math make 10" },
       { id: "nbEJEV2SXf4", title: "Interactive map 2" },
       { id: "5Ai1VrJ1Qjs", title: "HTML Hangman" },
       { id: "BaSTWUkLGog", title: "Mask NoMask" },
-      { id: "0JbUkIwkpEQ", title: "Python Webmap" },
+      # { id: "0JbUkIwkpEQ", title: "Python Webmap" },
     ]
   sectionImage:
     url: "multiple-kids.webp"
