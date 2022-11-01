@@ -3,11 +3,220 @@
 	--card-bg: var(--purple-bg);
 }
 
-/* .programs-list dt {
-	--wght: "wght" 600;
-	font-size: var(--step-1);
+.tile {
+	--svh: 18em;
+	position: relative;
+	min-height: calc(var(--svh) - (2 * var(--card-padding)));
+	max-height: calc(100vh - (2 * var(--card-padding)));
+	isolation: isolate;
+	background: radial-gradient(
+			circle at center,
+			transparent 35%,
+			transparent 35%,
+			var(--card-bg) 75%
+		),
+		radial-gradient(
+				circle at center,
+				var(--bg) 2px,
+				var(--card-bg) 1px,
+				var(--card-bg) 5px
+			)
+			50% 50%/8px 8px repeat;
+}
+
+/* .tile-content {
+	color: var(--text);
+	isolation: isolate;
+} 
+
+.tile-header {
+	--flow-space: 0.8em;
+
+	font-weight: 400;
+	letter-spacing: -0.022em;
+
+	color: var(--text);
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+} 
+*/
+
+.tile-overlay-toggle {
+	display: none;
+}
+
+/* .tile-overlay {
+	z-index: 1;
 } */
 
-/* .programs-list dd::before {
+.tile-button-wrapper {
+	position: absolute;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	width: var(--step-3);
+	height: var(--step-3);
+	bottom: var(--card-padding);
+	right: var(--card-padding);
+	-webkit-tap-highlight-color: transparent;
+	cursor: pointer;
+	/* z-index: 3; */
+}
+
+.tile-button {
+	--tile-background-color: var(--bg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: var(--step-3);
+	height: var(--step-3);
+	border-radius: 50%;
+	background-color: var(--text);
+	color: var(--tile-background-color);
+	opacity: 0.92;
+	transition: background-color 0.66s cubic-bezier(0.66, 0, 0.01, 1) 0.66s,
+		color 0.66s cubic-bezier(0.66, 0, 0.01, 1) 0.66s,
+		transform 0.66s cubic-bezier(0.66, 0, 0.2, 1), opacity 100ms linear;
+	-webkit-tap-highlight-color: transparent;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.tile-icon-alt {
+	fill: currentColor;
+	width: 50%;
+	height: 50%;
+	/* position: absolute;
+	left: 50%;
+	transform: translateX(-50%); */
+}
+
+.tile-button-text {
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	right: 0;
+}
+
+.tile-overlay-header {
+	position: absolute;
+}
+
+.tile-overlay-headline {
+	color: var(--bg);
+}
+
+.tile-overlay-content {
+	background-color: var(--heading-color);
+
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	position: absolute;
+	padding: var(--card-padding);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.66s cubic-bezier(0.66, 0, 0.01, 1) 0.66s,
+		visibility 0s linear 1.32s;
+
+	border-radius: var(--border-radius);
+}
+
+.tile-overlay-body {
+	color: var(--bg);
+	/* visibility: hidden; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+	height: 100%;
+	align-items: center;
+}
+
+.tile-overlay-list li:before {
 	content: "✦";
-} */
+	alt: "";
+	color: currentColor;
+	font-size: var(--step--1);
+	line-height: 1;
+	margin-top: 1ex;
+}
+
+.tile-overlay-copy {
+	--cluster-gap: 0.5em;
+	--cluster-vertical-alignment: flex-start;
+	flex-wrap: nowrap;
+	visibility: hidden;
+
+	/* max-width: var(--tile-overlay-copy-max-width); */
+	opacity: 0;
+	transform: translateY(-1em);
+	transition: all 0.66s cubic-bezier(0.66, 0, 0.2, 1);
+}
+
+.tile-overlay-toggle:checked ~ .tile-overlay .tile-overlay-content {
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0s;
+}
+
+.tile-overlay-toggle:checked ~ .tile-overlay .tile-overlay-copy {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+	transition-delay: 0.66s;
+}
+
+.tile-overlay-toggle:checked ~ .tile-overlay .tile-button {
+	color: var(--heading-color);
+	background-color: var(--bg);
+	transform: rotate(45deg);
+	transition-delay: 0s;
+}
+
+.programs-list {
+	display: grid;
+	--min: 24ch;
+	--gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+	gap: var(--gap);
+}
+
+/* sticky */
+
+@media (max-width: 37.8125em) {
+	.programs-list > * {
+		position: sticky;
+		box-shadow: rgba(37, 38, 39, 0.03) 0px -1px 3px 0px,
+			rgba(37, 38, 39, 0.03) 0px 1px 2px -5px,
+			rgba(37, 38, 39, 0.05) 0px 2px 5px -5px,
+			rgba(37, 38, 39, 0.06) 0px 4px 12px -5px,
+			rgba(37, 38, 39, 0.08) 0px 12px 15px -5px;
+		top: calc(
+			var(--logo-height) + var(--header-padding-block) +
+				var(--header-padding-block) + (var(--space-l-xl) * var(--multiplier, 0))
+		);
+		rotate: calc(0.5deg * var(--multiplier, 0));
+	}
+	.programs-list > :nth-child(1) {
+		--multiplier: 1;
+	}
+	.programs-list > :nth-child(2) {
+		--multiplier: 2;
+	}
+	.programs-list > :nth-child(3) {
+		--multiplier: 3;
+	}
+	.programs-list > :nth-child(4) {
+		--multiplier: 4;
+	}
+}

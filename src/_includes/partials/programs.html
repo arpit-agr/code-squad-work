@@ -11,16 +11,37 @@
   <div class="article-heading flow">
     {% image sectionUrl, sectionAlt, sectionSizes, sectionLoading, sectionClass %}
     <h2 data-type="animation">{{ heading }}</h2>
-    </div>
   </div>
-  <dl class="programs-list grid">
+  <ul class="programs-list" role="list">
     {% for item in programs.grades %}
-      <div class="card shadow flow">
-        <dt>{{ item.heading }}</dt>
-        {% for content in item.content %}
-          <dd class="cluster"><p>{{ content | safe }}</p></dd>
-        {% endfor %}
-      </div>
+      <li class="tile card flow">
+        <h3 class="tile-content">{{ item.heading }}</h3>
+        <input type="checkbox" class="tile-overlay-toggle" id={{ item.heading | slugify }}>
+        <div class="tile-overlay">
+          <label tabindex="0" class="tile-button-wrapper" for={{ item.heading | slugify }}>
+            <span class="tile-button">
+              {% include "snippets/plus.html" %}
+            </span>
+            <span class="tile-button-text" role="button" aria-expanded="false" aria-controls="content-toggle-{{ item.heading | slugify }}">
+              <span class="vh">More about {{ item.heading }}</span>
+            </span>
+          </label>
+          <div class="tile-overlay-content" role="group" aria-label="More content about {{ item.heading }}" aria-hidden="true">
+            <div class="tile-overlay-header" id="content-toggle-{{ item.heading | slugify }}">
+              <h3 class="tile-overlay-headline">
+                {{ item.heading }}
+              </h3>
+            </div>
+            <div class="tile-overlay-body">
+              <ul class="tile-overlay-list flow" role="list">
+                {% for content in item.content %}
+                  <li class="tile-overlay-copy cluster"><p>{{ content | safe }}</p></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
     {% endfor %}
-  </dl>
+  </ul>
 </article>

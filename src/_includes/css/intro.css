@@ -16,6 +16,7 @@
 			var(--section-gap)
 	);
 	min-width: min((var(--max-width) - (2 * var(--card-padding))), 100%);
+	border: var(--card-border-width) solid var(--heading-color);
 }
 
 #intro h1 {
@@ -30,6 +31,7 @@
 
 .codewfloppy {
 	color: var(--heading-color);
+	text-align: center;
 }
 
 .codewfloppy:after {
