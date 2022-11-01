@@ -18,29 +18,29 @@
 	}
 
 	/* limits 'why choose us' items to 3 */
-	.why-list.disclosure-widget[data-state="hidden"] > :nth-child(n + 4) {
+	.why-list.disclosure-widget[data-visible="false"] > :nth-child(n + 4) {
 		display: none;
 	}
 
-	.why-list.disclosure-widget[data-state="visible"] > :nth-child(n + 4) {
+	.why-list.disclosure-widget[data-visible="true"] > :nth-child(n + 4) {
 		display: flex;
 	}
 
 	/* limits features to 8 */
-	.features-list.disclosure-widget[data-state="hidden"] > :nth-child(n + 9) {
+	.features-list.disclosure-widget[data-visible="false"] > :nth-child(n + 9) {
 		display: none;
 	}
 
-	.features-list.disclosure-widget[data-state="visible"] > :nth-child(n + 9) {
+	.features-list.disclosure-widget[data-visible="true"] > :nth-child(n + 9) {
 		display: flex;
 	}
 
 	/* limits videos to 1 */
-	.videos-list.disclosure-widget[data-state="hidden"] > :nth-child(n + 2) {
+	.videos-list.disclosure-widget[data-visible="false"] > :nth-child(n + 2) {
 		display: none;
 	}
 
-	.videos-list.disclosure-widget[data-state="visible"] > :nth-child(n + 2) {
+	.videos-list.disclosure-widget[data-visible="true"] > :nth-child(n + 2) {
 		display: unset;
 	}
 }

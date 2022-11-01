@@ -28,7 +28,7 @@
       if (!'IntersectionObserver' in window) {
         return;
       }
-      const elements = document.querySelectorAll('[data-type="animation"]');
+      const elements = document.querySelectorAll(['[data-type="animation"]', '.fade-in']);
 
       let observer = new IntersectionObserver(
         (changes, observer) => {
@@ -60,12 +60,12 @@
   <script>
     function toggleDisclosure() {
       if (this.getAttribute("aria-expanded") == "false") {
-        this.previousElementSibling.setAttribute('data-state', 'visible');
+        this.previousElementSibling.setAttribute('data-visible', 'true');
         this.setAttribute("aria-expanded", "true");
         this.innerText = "View Less";
       } 
       else {
-        this.previousElementSibling.setAttribute('data-state', 'hidden');
+        this.previousElementSibling.setAttribute('data-visible', 'false');
         this.setAttribute("aria-expanded", "false");
         this.innerText = "View More";
       }
@@ -73,7 +73,7 @@
     const disclosureWidget = document.querySelectorAll('.disclosure-widget');
     const viewAllButton = document.querySelectorAll('.view-all');
 
-    disclosureWidget.forEach( x=> x.setAttribute('data-state', 'hidden'));
+    disclosureWidget.forEach( x=> x.setAttribute('data-visible', 'false'));
     viewAllButton.forEach( x=> x.addEventListener("click", toggleDisclosure));
   </script>
   <script>

@@ -14,7 +14,7 @@
   </div>
   <ul class="programs-list" role="list">
     {% for item in programs.grades %}
-      <li class="tile card flow">
+      <li class="tile card flow fade-in">
         <h3 class="tile-content">{{ item.heading }}</h3>
         <input type="checkbox" class="tile-overlay-toggle" id={{ item.heading | slugify }}>
         <div class="tile-overlay">

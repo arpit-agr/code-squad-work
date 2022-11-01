@@ -16,7 +16,7 @@ about:
   imageAlt: "Kid studying coding on a computer in a classroom"
   imageSizes: "(max-width: 74.25em) 100vw, 50vw"
   imageLoading: "lazy"
-  imageClass: "img-kids"
+  imageClass: "img-kids fade-in"
   imagePriority: ""
   sectionImage:
     url: "kid-n-teacher.webp"

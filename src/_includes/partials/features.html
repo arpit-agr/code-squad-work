@@ -12,10 +12,10 @@
     {% image sectionUrl, sectionAlt, sectionSizes, sectionLoading, sectionClass %}
     <h2 data-type="animation">{{ heading }}</h2>
   </div>
-  <h3 class="features-desc">{{ features.desc | addNbsp | safe }}</h3>
+  <h3 class="features-desc fade-in">{{ features.desc | addNbsp | safe }}</h3>
   <dl class="features-list grid">
     {% for item in features.items %}
-      <div class="card flow">
+      <div class="card flow fade-in">
         <dt>{{ item.heading }}</dt>
         {% for content in item.content %}
           <dd class="cluster"><p>{{ content | safe }}</p></dd>
