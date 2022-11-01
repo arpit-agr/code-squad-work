@@ -1,4 +1,16 @@
-.article-heading[data-variant="with-illustration"] {
+.article-heading * {
+	--flow-space: var(--space-xs);
+}
+
+.section-image {
+	aspect-ratio: 1;
+	width: var(--step-7);
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* .article-heading[data-variant="with-illustration"] {
 	display: grid;
 	grid-template-columns: 1fr auto;
 	gap: 0.5em;
@@ -6,19 +18,38 @@
 
 .article-heading[data-variant="with-illustration"] h2 {
 	align-self: flex-end;
-}
+} */
 
 .article-heading h2 {
-	border-left: var(--article-border-width) solid currentColor;
-	padding-left: calc(var(--card-padding) - var(--article-border-width));
+	position: relative;
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
 	color: var(--heading-color);
+	text-align: center;
+}
+
+.article-heading h2:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 1ex;
+	background-color: var(--card-bg);
+	margin-top: -1ex;
+	z-index: -1;
+}
+
+.article-heading + * {
+	/* --flow-space: var(--section-gap); */
+	--flow-space: var(--space-l-xl);
 }
 
 .card {
 	padding: var(--card-padding);
 	background-color: var(--card-bg);
-	border: var(--card-border-width) solid var(--heading-color);
 	border-radius: var(--border-radius);
+	box-shadow: rgba(37, 38, 39, 0.1) 0px 1px 2px -1px;
 }
 
 .card[data-variant="browser"] {
