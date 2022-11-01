@@ -1,13 +1,44 @@
-#platform-features {
+#what-is-cscm {
 	--heading-color: var(--pink);
 	--card-bg: var(--pink-bg);
 }
 
 .features-desc {
-	padding-left: var(--card-padding);
+	/* padding-left: var(--card-padding); */
+	position: relative;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 48em) {
+	.features-desc:before,
+	.features-desc:after {
+		--arrow-size: var(--step-6);
+		content: "";
+		background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 85 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M84.143 1.126c-15.685 13.917-35.87 23.722-57.435 21.648-6.315-.608-13.457-3.27-19.198-6.11-1.213-.6-2.312-1.398-3.424-2.167-1.016-.702.868 7.799 1.034 8.799 1.778 10.69.124-.857-1.079-4.83-.933-3.084-2.905-6.175-3.34-9.39-.35-2.59 4.798-2.049 6.565-2.218 1.817-.174 13.555-3.079 11.985.954-2.818 7.234-8.336 12.077-13.239 17.745' stroke='%231e1f20' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+		background-repeat: no-repeat no-repeat;
+		background-position: center center;
+		position: absolute;
+		width: var(--arrow-size);
+		height: var(--arrow-size);
+		z-index: -1;
+	}
+
+	.features-desc:before {
+		rotate: 135deg;
+		scale: -1 1;
+		left: -5em;
+	}
+
+	.features-desc:after {
+		rotate: 235deg;
+		right: -5em;
+	}
 }
 
 .features-list {
+	--flow-space: var(--space-xl-2xl);
 	--columns: 1;
 	columns: var(--columns);
 	column-gap: calc(2 * var(--card-padding));

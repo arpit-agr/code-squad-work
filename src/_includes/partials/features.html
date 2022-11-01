@@ -11,19 +11,16 @@
   <div class="article-heading flow">
     {% image sectionUrl, sectionAlt, sectionSizes, sectionLoading, sectionClass %}
     <h2 data-type="animation">{{ heading }}</h2>
-    </div>
   </div>
-  <!-- <p class="features-desc step--1">
-    {{ features.desc | addNbsp | safe }}
-  </p> -->
-  <ul class="features-list card shadow flow disclosure-widget" id="features-list" role="list">
-    {% for content in features.content %}
-      <li class="cluster">
-        <p>{{ content | safe }}</p>
-      </li>
+  <h3 class="features-desc">{{ features.desc | addNbsp | safe }}</h3>
+  <dl class="features-list grid">
+    {% for item in features.items %}
+      <div class="card flow">
+        <dt>{{ item.heading }}</dt>
+        {% for content in item.content %}
+          <dd class="cluster"><p>{{ content | safe }}</p></dd>
+        {% endfor %}
+      </div>
     {% endfor %}
-  </ul>
-  <button class="view-all" aria-expanded="false" aria-controls="features-list">
-    View More <span class="vh">items in {{ heading }}</span>
-  </button>
+  </dl>
 </article>
