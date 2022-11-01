@@ -10,7 +10,7 @@
 <article class="flow wrapper" id={{ heading | slugify }}>
   <div class="article-heading flow">
     {% image sectionUrl, sectionAlt, sectionSizes, sectionLoading, sectionClass %}
-    <h2>{{ heading }}</h2>
+    <h2 data-type="animation">{{ heading }}</h2>
   </div>
   <ul class="why-list grid disclosure-widget" id="why-list" role="list">
     {% for content in why.content %}

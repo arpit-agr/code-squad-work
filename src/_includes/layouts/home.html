@@ -24,6 +24,40 @@
 <!-- TODO: check the defer attribute on the scripts -->
 {%- block bodyScripts -%}
   <script>
+    (function () {
+      if (!'IntersectionObserver' in window) {
+        return;
+      }
+      const elements = document.querySelectorAll('[data-type="animation"]');
+
+      let observer = new IntersectionObserver(
+        (changes, observer) => {
+          let timeout = 0;
+
+          changes.forEach(change => {
+            if (change.intersectionRatio > 0) {
+              timeout += 200;
+              setTimeout(() => {
+                change.target.setAttribute('data-state', 'in-view');
+              }, timeout);
+            }
+          });
+        },
+        {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0
+        }
+      );
+
+      elements.forEach(element => {
+        element.setAttribute('data-state', 'out-view');
+
+        observer.observe(element);
+      });
+    })();
+  </script>
+  <script>
     function toggleDisclosure() {
       if (this.getAttribute("aria-expanded") == "false") {
         this.previousElementSibling.setAttribute('data-state', 'visible');
