@@ -142,13 +142,9 @@
 	align-items: center;
 }
 
-.tile-overlay-list li:before {
-	content: "✦";
-	alt: "";
+/* class has been duplicated to increase the specificity  */
+.tile-overlay-list.tile-overlay-list li:before {
 	color: currentColor;
-	font-size: var(--step--1);
-	line-height: 1;
-	margin-top: 1ex;
 }
 
 .tile-overlay-copy {
