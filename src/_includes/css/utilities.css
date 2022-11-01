@@ -59,3 +59,10 @@
 	width: 1px;
 	white-space: nowrap;
 }
+
+.full-bleed {
+	padding-block: var(--section-gap);
+	background: var(--card-bg);
+	box-shadow: 0 0 0 100vmax var(--card-bg);
+	clip-path: inset(0 -100vmax);
+}
