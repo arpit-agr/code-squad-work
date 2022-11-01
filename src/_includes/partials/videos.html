@@ -14,7 +14,7 @@
   </div>
   <ul class="videos-list grid disclosure-widget" id="videos-list" role="list">
     {% for video in videos.content %}
-      <li class="video-card shadow">
+      <li class="video-card">
         <lite-youtube
           videoid={{ video.id }}
           videotitle={{ video.title | dump | safe }}

@@ -8,7 +8,8 @@
 
 /* temporary fix until there is only one testimonial */
 #testimonial .article-heading {
-	min-width: min(calc(42ch + (2 * var(--card-padding))), 100%);
+	/* min-width: min(calc(42ch + (2 * var(--card-padding))), 100%); */
+	min-width: 100%;
 }
 
 #testimonial :where(figure, blockquote, figcaption) {
@@ -17,6 +18,8 @@
 
 #testimonial figure {
 	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #testimonial figure:before,

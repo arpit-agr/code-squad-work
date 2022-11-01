@@ -1,6 +1,6 @@
 #videos {
 	--heading-color: var(--text);
-	--card-bg: var(--bg);
+	--card-bg: hsl(0deg 20% var(--bg-lightness));
 }
 
 .video-card {
