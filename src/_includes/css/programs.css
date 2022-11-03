@@ -4,9 +4,9 @@
 }
 
 .tile {
-	--svh: 18em;
+	--tile-height: 18em;
 	position: relative;
-	min-height: calc(var(--svh) - (2 * var(--card-padding)));
+	min-height: calc(var(--tile-height) - (2 * var(--card-padding)));
 	max-height: calc(100vh - (2 * var(--card-padding)));
 	isolation: isolate;
 	background: radial-gradient(
