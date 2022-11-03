@@ -16,6 +16,8 @@
     {% for item in programs.grades %}
       <li class="tile card flow fade-in">
         <h3 class="tile-content">{{ item.heading }}</h3>
+        {% set cardUrl = "./src/images/" + item.cardImage.url %}
+        {% image cardUrl, item.cardImage.alt, item.cardImage.sizes, item.cardImage.loading, item.cardImage.class %}
         <input type="checkbox" class="tile-overlay-toggle" id={{ item.heading | slugify }}>
         <div class="tile-overlay">
           <label tabindex="0" class="tile-button-wrapper" for={{ item.heading | slugify }}>

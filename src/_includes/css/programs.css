@@ -216,3 +216,9 @@
 		--multiplier: 4;
 	}
 }
+
+/* .tile-content {
+	display: grid;
+	place-items: center;
+	height: 100%;
+} */

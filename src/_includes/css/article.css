@@ -2,7 +2,8 @@
 	--flow-space: var(--space-xs);
 }
 
-.section-image {
+.section-image,
+.card-image {
 	aspect-ratio: 1;
 	width: var(--step-7);
 	height: auto;

@@ -82,6 +82,15 @@ programs:
         heading: "Grade 1-2",
         content:
           ["Intro to coding using Scratch Jr", "Unplugged STEAM activities"],
+        cardImage:
+          {
+            url: "coding-kid.webp",
+            alt: "",
+            sizes: "(max-width: 74.25em) 400px, 400px",
+            loading: "lazy",
+            class: "card-image",
+            priority: "",
+          },
       },
       {
         heading: "Grade 3-5",
@@ -90,10 +99,28 @@ programs:
             "Game programming using Scratch",
             "Intro to AI & <abbr title='Machine learning'>ML</abbr>",
           ],
+        cardImage:
+          {
+            url: "coding-kid.webp",
+            alt: "",
+            sizes: "(max-width: 74.25em) 400px, 400px",
+            loading: "lazy",
+            class: "card-image",
+            priority: "",
+          },
       },
       {
         heading: "Grade 6-8",
         content: ["Mobile App development", "Intro to HTML, CSS, Javascript"],
+        cardImage:
+          {
+            url: "coding-kid.webp",
+            alt: "",
+            sizes: "(max-width: 74.25em) 400px, 400px",
+            loading: "lazy",
+            class: "card-image",
+            priority: "",
+          },
       },
       {
         heading: "Grade 9-10",
@@ -103,6 +130,15 @@ programs:
             "Cybersecurity",
             "Intro to Cryptocurrency & <abbr title='Non-fungible tokens'>NFTs</abbr>",
           ],
+        cardImage:
+          {
+            url: "coding-kid.webp",
+            alt: "",
+            sizes: "(max-width: 74.25em) 400px, 400px",
+            loading: "lazy",
+            class: "card-image",
+            priority: "",
+          },
       },
     ]
   sectionImage:
